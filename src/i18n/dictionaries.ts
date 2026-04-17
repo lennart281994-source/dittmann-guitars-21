@@ -9,6 +9,7 @@ export const paths = {
   instruments: { de: "instrumente", en: "instruments" },
   commission: { de: "auftragsbau", en: "commission" },
   construction: { de: "bauweise", en: "construction" },
+  sound: { de: "klang", en: "sound" },
   contact: { de: "kontakt", en: "contact" },
 } as const;
 
@@ -22,6 +23,7 @@ export const dict = {
       instruments: "Verfügbare Gitarren",
       commission: "Individuelle Anfertigung",
       construction: "Bauweise",
+      sound: "Klang",
       contact: "Kontakt",
     },
     home: {
@@ -150,6 +152,7 @@ export const dict = {
       instruments: "Guitars",
       commission: "Custom Build",
       construction: "Construction",
+      sound: "Sound",
       contact: "Contact",
     },
     home: {
