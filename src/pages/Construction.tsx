@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useT } from "@/i18n/useT";
 import tonhoelzer from "@/assets/construction-tonhoelzer.jpg";
 import konstruktion from "@/assets/construction-konstruktion.jpg";
@@ -7,6 +8,25 @@ const blockImages = [tonhoelzer, konstruktion, spielbarkeit];
 
 const Construction = () => {
   const { t } = useT();
+
+  useEffect(() => {
+    // Load Instagram embed script
+    const existing = document.querySelector<HTMLScriptElement>(
+      'script[src="//www.instagram.com/embed.js"]',
+    );
+    if (!existing) {
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "//www.instagram.com/embed.js";
+      document.body.appendChild(s);
+    } else {
+      // @ts-expect-error instgrm is injected by embed.js
+      window.instgrm?.Embeds?.process?.();
+    }
+  }, []);
+
+  const watchIndex = t.construction.blocks.length; // 4th block → idx 3
+  const watchReverse = watchIndex % 2 === 1;
 
   return (
     <div className="pt-32 md:pt-40 pb-32 md:pb-48">
@@ -61,6 +81,60 @@ const Construction = () => {
             </article>
           );
         })}
+
+        {/* Watch construction — Instagram embed in same layout */}
+        <article className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+          <div
+            className={`md:col-span-6 ${
+              watchReverse ? "md:order-2" : "md:order-1"
+            }`}
+          >
+            <div className="max-w-md mx-auto overflow-hidden rounded-2xl bg-muted">
+              <blockquote
+                className="instagram-media"
+                data-instgrm-captioned
+                data-instgrm-permalink="https://www.instagram.com/dittmann.guitars/"
+                data-instgrm-version="14"
+                style={{
+                  background: "hsl(var(--muted))",
+                  border: 0,
+                  margin: 0,
+                  maxWidth: "100%",
+                  minWidth: "280px",
+                  padding: 0,
+                  width: "100%",
+                }}
+              >
+                <a
+                  href="https://www.instagram.com/dittmann.guitars/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-8 text-center font-display text-sm text-muted-foreground"
+                >
+                  Beitrag auf Instagram ansehen — @dittmann.guitars
+                </a>
+              </blockquote>
+            </div>
+          </div>
+
+          <div
+            className={`md:col-span-6 ${
+              watchReverse ? "md:order-1" : "md:order-2"
+            }`}
+          >
+            <div className="max-w-md mx-auto md:mx-0">
+              <p className="text-[11px] uppercase tracking-[0.2em] text-accent mb-4">
+                {String(watchIndex + 1).padStart(2, "0")}
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl text-foreground tracking-tight leading-tight">
+                {t.construction.watchTitle}
+              </h2>
+              <p className="mt-6 font-display text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+                {t.construction.watchText}
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   );
