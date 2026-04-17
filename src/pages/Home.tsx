@@ -130,13 +130,13 @@ const Home = () => {
             height={1080}
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-foreground/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/55 to-foreground/20" />
         </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-8 md:gap-16 items-center">
-              <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1">
-                <p className="text-[11px] uppercase tracking-[0.2em] text-background/80 mb-4 md:mb-6">
+              <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1 [text-shadow:_0_1px_12px_hsl(var(--foreground)/0.6)]">
+                <p className="text-[11px] uppercase tracking-[0.2em] text-background mb-4 md:mb-6">
                   {t.home.aboutTitle}
                 </p>
                 <p className="font-display leading-snug text-background whitespace-pre-line text-sm md:text-lg">
