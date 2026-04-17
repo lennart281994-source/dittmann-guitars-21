@@ -8,9 +8,9 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-32 border-t border-border/70">
-      <div className="container py-16">
-        <div className="grid gap-12 md:grid-cols-3 md:gap-8 items-start">
+    <footer className="mt-20 border-t border-border/70">
+      <div className="container py-8">
+        <div className="grid gap-6 md:grid-cols-3 md:gap-8 items-start">
           {/* Left: brand + tagline + contact */}
           <div className="space-y-4">
             <Link to={`/${locale}`} className="font-display text-lg text-foreground block">
@@ -69,7 +69,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom: centered copyright */}
-        <div className="mt-12 pt-8 border-t border-border/50 text-center">
+        <div className="mt-6 pt-4 border-t border-border/50 text-center">
           <p className="text-xs text-muted-foreground/80">
             © {year} {t.footer.maker} – Gitarrenbau. {t.footer.rights}
           </p>
