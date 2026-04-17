@@ -47,9 +47,6 @@ const Home = () => {
 
       {/* TWO PATHS */}
       <section className="container py-28 md:py-40">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-12 md:mb-20">
-          {t.home.twoPathsKicker}
-        </p>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image with soft crossfade */}
