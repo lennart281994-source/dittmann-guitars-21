@@ -8,6 +8,7 @@ import pathAvailable from "@/assets/path-available.jpg";
 import pathCommission from "@/assets/path-commission.jpg";
 import maker from "@/assets/maker.jpg";
 import process from "@/assets/process.jpg";
+import aboutBg from "@/assets/about-bg.jpg";
 
 const Home = () => {
   const { t, locale } = useT();
@@ -119,26 +120,41 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section className="container py-24 md:py-32">
-        <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
-          <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1">
-            <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
-              {t.home.aboutTitle}
-            </p>
-            <p className="font-display leading-snug text-foreground whitespace-pre-line text-lg">
-              {t.home.aboutText}
-            </p>
-          </div>
-          <div className="md:col-span-5 md:col-start-8 max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted max-h-[70vh]">
-              <img
-                src={maker}
-                alt="Michael Dittmann in seiner Werkstatt"
-                className="w-full h-full object-cover"
-                width={1280}
-                height={1600}
-                loading="lazy"
-              />
+      <section className="relative w-full overflow-hidden">
+        <div className="aspect-[16/9] md:aspect-[21/9] w-full">
+          <img
+            src={aboutBg}
+            alt=""
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-foreground/30" />
+        </div>
+        <div className="absolute inset-0 flex items-center">
+          <div className="container">
+            <div className="grid md:grid-cols-12 gap-8 md:gap-16 items-center">
+              <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1">
+                <p className="text-[11px] uppercase tracking-[0.2em] text-background/80 mb-4 md:mb-6">
+                  {t.home.aboutTitle}
+                </p>
+                <p className="font-display leading-snug text-background whitespace-pre-line text-sm md:text-lg">
+                  {t.home.aboutText}
+                </p>
+              </div>
+              <div className="md:col-span-5 md:col-start-8 max-w-[180px] md:max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
+                <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted shadow-2xl">
+                  <img
+                    src={maker}
+                    alt="Michael Dittmann in seiner Werkstatt"
+                    className="w-full h-full object-cover"
+                    width={1280}
+                    height={1600}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
