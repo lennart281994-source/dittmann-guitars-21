@@ -154,10 +154,10 @@ const Home = () => {
       </section>
 
       {/* CONTACT INVITATION */}
-      <section className="py-28 md:py-40">
+      <section className="py-16 md:py-24">
         <div className="container max-w-3xl text-center">
           <div className="border-t border-border/70" />
-          <div className="py-16 md:py-20 space-y-8 md:space-y-10">
+          <div className="py-12 md:py-16 space-y-8 md:space-y-10">
             <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-foreground">
               {t.home.contactInvite}
             </p>
