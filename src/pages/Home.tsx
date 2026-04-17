@@ -196,17 +196,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PHILOSOPHY STRIP */}
-      <section className="container py-32 md:py-40 text-center max-w-3xl">
-        <p className="font-display italic text-xl md:text-2xl text-foreground leading-relaxed">
-          {t.home.philosophy}
-        </p>
-        {t.home.philosophyBody && (
-          <p className="mt-6 font-display text-base md:text-lg leading-relaxed text-muted-foreground whitespace-pre-line max-w-2xl mx-auto">
-            {t.home.philosophyBody}
-          </p>
-        )}
-      </section>
     </>
   );
 };
