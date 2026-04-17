@@ -9,40 +9,70 @@ export const Footer = () => {
 
   return (
     <footer className="mt-32 border-t border-border/70">
-      <div className="container py-16 grid gap-12 md:grid-cols-3 md:gap-8 items-start">
-        <div>
-          <Link to={`/${locale}`} className="font-display text-lg text-foreground">
-            {t.footer.maker}
-          </Link>
-          <p className="mt-2 text-sm text-muted-foreground">{t.footer.tag}</p>
-        </div>
-
-        <div className="text-sm text-muted-foreground space-y-1">
-          <a href={`mailto:${t.contact.email}`} className="link-underline block hover:text-foreground transition-soft">
-            {t.contact.email}
-          </a>
-          <a href={`tel:${t.contact.phone.replace(/\s/g, "")}`} className="link-underline block hover:text-foreground transition-soft">
-            {t.contact.phone}
-          </a>
-          
-        </div>
-
-        <div className="md:flex md:justify-end">
-          <div className="space-y-4 md:text-right">
-            <LanguageSwitch />
-            <div className="md:flex md:justify-end">
-              <LegalDialogs />
+      <div className="container py-16">
+        <div className="grid gap-12 md:grid-cols-3 md:gap-8 items-start">
+          {/* Left: brand + tagline + contact */}
+          <div className="space-y-4">
+            <Link to={`/${locale}`} className="font-display text-lg text-foreground block">
+              {t.footer.maker}
+            </Link>
+            <p className="text-sm text-muted-foreground">{t.footer.tag}</p>
+            <div className="text-sm text-muted-foreground space-y-1 pt-2">
+              <a
+                href={`mailto:${t.contact.email}`}
+                className="link-underline block hover:text-foreground transition-soft"
+              >
+                {t.contact.email}
+              </a>
+              <a
+                href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
+                className="link-underline block hover:text-foreground transition-soft"
+              >
+                {t.contact.phone}
+              </a>
             </div>
-            <p className="text-xs text-muted-foreground/80">
-              © {year} {t.footer.maker}. {t.footer.rights}
-            </p>
+          </div>
+
+          {/* Middle: navigation */}
+          <nav className="flex flex-col gap-2 text-sm text-muted-foreground md:items-center">
+            <Link
+              to={pathFor("instruments", locale)}
+              className="link-underline hover:text-foreground transition-soft"
+            >
+              {t.nav.instruments}
+            </Link>
+            <Link
+              to={pathFor("commission", locale)}
+              className="link-underline hover:text-foreground transition-soft"
+            >
+              {t.nav.commission}
+            </Link>
+            <Link
+              to={pathFor("construction", locale)}
+              className="link-underline hover:text-foreground transition-soft"
+            >
+              {t.nav.construction}
+            </Link>
             <Link
               to={pathFor("contact", locale)}
-              className="link-underline text-xs text-muted-foreground hover:text-foreground transition-soft"
+              className="link-underline hover:text-foreground transition-soft"
             >
               {t.nav.contact}
             </Link>
+          </nav>
+
+          {/* Right: legal + language */}
+          <div className="space-y-4 md:text-right md:flex md:flex-col md:items-end">
+            <LegalDialogs />
+            <LanguageSwitch />
           </div>
+        </div>
+
+        {/* Bottom: centered copyright */}
+        <div className="mt-12 pt-8 border-t border-border/50 text-center">
+          <p className="text-xs text-muted-foreground/80">
+            © {year} {t.footer.maker} – Gitarrenbau. {t.footer.rights}
+          </p>
         </div>
       </div>
     </footer>
