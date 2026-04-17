@@ -139,7 +139,7 @@ const Home = () => {
             <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
               {t.home.aboutTitle}
             </p>
-            <p className="font-display leading-snug text-foreground whitespace-pre-line text-base">
+            <p className="font-display leading-snug text-foreground whitespace-pre-line text-lg">
               {t.home.aboutText}
             </p>
           </div>
