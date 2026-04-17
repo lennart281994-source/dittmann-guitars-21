@@ -17,8 +17,9 @@ export type PathKey = keyof typeof paths;
 export const dict = {
   de: {
     nav: {
-      instruments: "Verfügbare Instrumente",
-      commission: "Auftragsbau",
+      guitars: "Gitarren",
+      instruments: "Verfügbare Gitarren",
+      commission: "Individuelle Anfertigung",
       construction: "Bauweise",
       contact: "Kontakt",
     },
@@ -26,8 +27,8 @@ export const dict = {
       heroName: "Michael Dittmann",
       heroSub: "Handgebaute Konzertgitarren",
       twoPathsKicker: "Zwei Wege",
-      pathAvailable: "Verfügbare Instrumente",
-      pathCommission: "Auftragsbau",
+      pathAvailable: "Verfügbare Gitarren",
+      pathCommission: "Individuelle Anfertigung",
       aboutTitle: "Über den Erbauer",
       aboutText:
         "Meine Faszination für die klassische Gitarre begann während meiner Zeit in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre berührt mich immer wieder und führt mich zurück an diesen Ort. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten, die aus Neugier entstanden, führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle dort meine eigene klangliche Handschrift im Gitarrenbau",
@@ -35,7 +36,7 @@ export const dict = {
       philosophyBody:
         "Hieraus ein Instrument zu formen, das den Spielenden Raum zur klanglichen Entfaltung gibt, ist der Grundgedanke meiner Arbeit.\n\nDie Basis bilden ausgewählte Tonhölzer, die sich seit Jahrzehnten in der Sammlung von Michael Wichmann befinden.",
       processKicker: "Werkstatt",
-      processLink: "Die Bauweise ansehen",
+      processLink: "Bauprozess ansehen",
       contactInvite: "Jedes Instrument beginnt mit einem Gespräch.",
       contactLink: "Kontakt aufnehmen",
     },
@@ -161,8 +162,9 @@ export const dict = {
   },
   en: {
     nav: {
-      instruments: "Available Instruments",
-      commission: "Commission a Guitar",
+      guitars: "Guitars",
+      instruments: "Available Guitars",
+      commission: "Custom Build",
       construction: "Construction",
       contact: "Contact",
     },
@@ -170,8 +172,8 @@ export const dict = {
       heroName: "Michael Dittmann",
       heroSub: "Handmade Classical Guitars",
       twoPathsKicker: "Two Paths",
-      pathAvailable: "Available Instruments",
-      pathCommission: "Commission a Guitar",
+      pathAvailable: "Available Guitars",
+      pathCommission: "Custom Build",
       aboutTitle: "About the Maker",
       aboutText:
         "For more than three decades I have devoted my work to building classical guitars. Each instrument is made quietly, carefully — shaped by chosen wood, a steady hand, and a clear tonal ideal.",
@@ -179,7 +181,7 @@ export const dict = {
       philosophyBody:
         "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
-      processLink: "See the construction",
+      processLink: "See the build process",
       contactInvite: "Every instrument begins with a conversation.",
       contactLink: "Get in touch",
     },
