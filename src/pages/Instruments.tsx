@@ -32,7 +32,7 @@ const Instruments = () => {
               className="grid md:grid-cols-12 gap-10 md:gap-16 items-center"
             >
               <div className={cn("md:col-span-7", reverse && "md:order-2 md:col-start-6")}>
-                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted max-h-[75vh] mx-auto">
                   <img
                     src={images[idx % images.length]}
                     alt={item.name}
