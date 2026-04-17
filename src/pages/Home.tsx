@@ -124,7 +124,15 @@ const Home = () => {
       {/* ABOUT */}
       <section className="container py-24 md:py-32">
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
-          <div className="md:col-span-5 max-w-md mx-auto md:mx-0 w-full">
+          <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              {t.home.aboutTitle}
+            </p>
+            <p className="font-display leading-snug text-foreground whitespace-pre-line text-lg">
+              {t.home.aboutText}
+            </p>
+          </div>
+          <div className="md:col-span-5 md:col-start-8 max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
             <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted max-h-[70vh]">
               <img
                 src={maker}
@@ -135,14 +143,6 @@ const Home = () => {
                 loading="lazy"
               />
             </div>
-          </div>
-          <div className="md:col-span-6 md:col-start-7 max-w-md lg:max-w-lg">
-            <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
-              {t.home.aboutTitle}
-            </p>
-            <p className="font-display leading-snug text-foreground whitespace-pre-line text-lg">
-              {t.home.aboutText}
-            </p>
           </div>
         </div>
       </section>
