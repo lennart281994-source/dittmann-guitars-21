@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { pathFor, useT } from "@/i18n/useT";
 import { cn } from "@/lib/utils";
@@ -13,11 +13,43 @@ import aboutBg from "@/assets/about-bg.jpg";
 const Home = () => {
   const { t, locale } = useT();
   const [activePath, setActivePath] = useState<"available" | "commission">("available");
+  const heroRef = useRef<HTMLElement | null>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      const el = heroRef.current;
+      if (!el) return;
+      const height = el.offsetHeight || 1;
+      // 0 at top of hero, 1 once user has scrolled one hero-height
+      const raw = window.scrollY / height;
+      const clamped = Math.max(0, Math.min(1, raw));
+      setScrollProgress(clamped);
+    };
+    const onScroll = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
+  // Eased progress for the tagline reveal — starts after a small scroll, fully visible by ~45%
+  const taglineProgress = Math.max(0, Math.min(1, (scrollProgress - 0.08) / 0.35));
+  // Overlay darkens up to ~18% as user scrolls through the hero
+  const overlayOpacity = scrollProgress * 0.18;
 
   return (
     <>
       {/* HERO — fullscreen media slot, ready to be swapped for video */}
-      <section className="relative h-[100svh] w-full overflow-hidden">
+      <section ref={heroRef} className="relative h-[100svh] w-full overflow-hidden">
         <div className="absolute inset-0">
           {/*
             To later replace with video, swap this <img> for:
@@ -32,6 +64,11 @@ const Home = () => {
           />
           {/* Subtle left gradient — improves text legibility, leaves the wood on the right untouched */}
           <div className="absolute inset-y-0 left-0 w-2/3 md:w-1/2 bg-gradient-to-r from-foreground/25 via-foreground/10 to-transparent" />
+          {/* Scroll-driven darkening overlay — very subtle */}
+          <div
+            className="absolute inset-0 bg-foreground pointer-events-none"
+            style={{ opacity: overlayOpacity, transition: "opacity 200ms linear" }}
+          />
         </div>
 
         <div className="relative h-full container flex items-center">
@@ -43,6 +80,20 @@ const Home = () => {
               {t.home.heroSub}
             </p>
           </div>
+        </div>
+
+        {/* Scroll-revealed tagline — softly appears as the user begins scrolling */}
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-[12vh] md:bottom-[14vh] flex justify-center px-6"
+          style={{
+            opacity: taglineProgress,
+            transform: `translateY(${(1 - taglineProgress) * 8}px)`,
+            transition: "opacity 300ms ease-out, transform 300ms ease-out",
+          }}
+        >
+          <p className="font-display font-light italic text-background/90 text-sm md:text-base tracking-[0.18em] uppercase text-center [text-shadow:_0_1px_12px_hsl(var(--foreground)/0.5)]">
+            {t.home.heroName}
+          </p>
         </div>
       </section>
 
