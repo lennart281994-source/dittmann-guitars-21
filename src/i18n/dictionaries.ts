@@ -162,8 +162,9 @@ export const dict = {
   },
   en: {
     nav: {
-      instruments: "Available Instruments",
-      commission: "Commission a Guitar",
+      guitars: "Guitars",
+      instruments: "Available Guitars",
+      commission: "Custom Build",
       construction: "Construction",
       contact: "Contact",
     },
@@ -171,8 +172,8 @@ export const dict = {
       heroName: "Michael Dittmann",
       heroSub: "Handmade Classical Guitars",
       twoPathsKicker: "Two Paths",
-      pathAvailable: "Available Instruments",
-      pathCommission: "Commission a Guitar",
+      pathAvailable: "Available Guitars",
+      pathCommission: "Custom Build",
       aboutTitle: "About the Maker",
       aboutText:
         "For more than three decades I have devoted my work to building classical guitars. Each instrument is made quietly, carefully — shaped by chosen wood, a steady hand, and a clear tonal ideal.",
