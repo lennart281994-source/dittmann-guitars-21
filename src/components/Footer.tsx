@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { LegalDialogs } from "./LegalDialogs";
 import { pathFor, useT } from "@/i18n/useT";
 
 export const Footer = () => {
@@ -29,6 +30,9 @@ export const Footer = () => {
         <div className="md:flex md:justify-end">
           <div className="space-y-4 md:text-right">
             <LanguageSwitch />
+            <div className="md:flex md:justify-end">
+              <LegalDialogs />
+            </div>
             <p className="text-xs text-muted-foreground/80">
               © {year} {t.footer.maker}. {t.footer.rights}
             </p>
