@@ -8,9 +8,9 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-32 border-t border-border/70">
-      <div className="container py-16">
-        <div className="grid gap-12 md:grid-cols-3 md:gap-8 items-start">
+    <footer className="mt-20 border-t border-border/70">
+      <div className="container py-8">
+        <div className="grid gap-6 md:grid-cols-3 md:gap-8 items-start">
           {/* Left: brand + tagline + contact */}
           <div className="space-y-4">
             <Link to={`/${locale}`} className="font-display text-lg text-foreground block">
