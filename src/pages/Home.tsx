@@ -182,13 +182,15 @@ const Home = () => {
             <div className="h-32 bg-gradient-to-t from-foreground/60 to-transparent" />
           </div>
           <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
-            <Link
-              to={pathFor("construction", locale)}
+            <a
+              href="https://instagram.com/dittmann.guitars"
+              target="_blank"
+              rel="noopener noreferrer"
               className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
             >
-              {t.home.processLink}
+              dittmann.guitars
               <ArrowRight className="size-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
