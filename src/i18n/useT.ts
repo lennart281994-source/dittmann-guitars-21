@@ -1,9 +1,10 @@
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { defaultLocale, dict, type Locale, locales, paths, type PathKey } from "./dictionaries";
 
 export function useLocale(): Locale {
-  const { locale } = useParams<{ locale?: string }>();
-  if (locale && (locales as string[]).includes(locale)) return locale as Locale;
+  const { pathname } = useLocation();
+  const first = pathname.split("/").filter(Boolean)[0];
+  if (first && (locales as string[]).includes(first)) return first as Locale;
   return defaultLocale;
 }
 
