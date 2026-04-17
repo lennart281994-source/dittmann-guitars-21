@@ -119,7 +119,7 @@ export const dict = {
       kicker: "Demnächst",
       title: "Klang",
       teaser:
-        "Hier entstehen bald\nVideoaufnahmen meiner Gitarren.",
+        "Hier sind bald \nVideos meiner Gitarren zu finden.",
       note: "Demnächst zu sehen und zu hören.",
     },
     contact: {
