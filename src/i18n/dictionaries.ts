@@ -97,6 +97,9 @@ export const dict = {
       title: "Bauweise",
       intro:
         "Mein Bauverständnis ist gewachsen — aus der Tradition spanischer Meister und aus dreißig Jahren eigener Werkstattarbeit. Was bleibt, ist eine ruhige, klare Linie.",
+      watchTitle: "Bauweise ansehen",
+      watchText:
+        "Einblicke aus der Werkstatt — kurze Momente aus dem Bau meiner Gitarren.",
       blocks: [
         {
           title: "Tonhölzer",
@@ -233,6 +236,9 @@ export const dict = {
       title: "Construction",
       intro:
         "My way of building has grown — out of the Spanish tradition and out of thirty years of work in my own workshop. What remains is a quiet, clear line.",
+      watchTitle: "Watch construction",
+      watchText:
+        "Glimpses from the workshop — short moments from building my guitars.",
       blocks: [
         {
           title: "Tonewoods",
