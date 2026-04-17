@@ -199,12 +199,12 @@ const Home = () => {
           </div>
           <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
             <a
-              href="https://instagram.com/dittmann.guitars"
+              href="https://www.instagram.com/dittmann.guitars/"
               target="_blank"
               rel="noopener noreferrer"
               className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
             >
-              dittmann.guitars
+              Bauprozess ansehen
               <ArrowRight className="size-4" />
             </a>
           </div>
