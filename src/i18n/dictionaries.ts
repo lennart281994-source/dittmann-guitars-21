@@ -118,24 +118,19 @@ export const dict = {
         "Mein Bauverständnis ist gewachsen — aus der Tradition spanischer Meister und aus dreißig Jahren eigener Werkstattarbeit. Was bleibt, ist eine ruhige, klare Linie.",
       blocks: [
         {
-          title: "Hölzer",
+          title: "Tonhölzer",
           text:
-            "Ich verwende ausschließlich lange gelagerte, sorgfältig ausgewählte Tonhölzer. Decken aus europäischer Fichte oder westlicher Roteder, Böden und Zargen aus Palisander, Ahorn oder Ziricote.",
+            "Jedes Stück Holz bringt eigene Eigenschaften mit, die im Instrument berücksichtigt werden.\n\nFür die Decke kommen Fichte oder Zeder zum Einsatz, für Boden und Zargen sowohl tropische als auch heimische Hölzer aus dem über Jahrzehnte gewachsenen Bestand von Michael Wichmann.\n\nAusgewählte Tonhölzer bilden die Grundlage jeder Gitarre.",
         },
         {
           title: "Konstruktion",
           text:
-            "Klassische Fächerbeleistung in feiner Ausarbeitung. Jede Decke wird einzeln auf Klang abgestimmt — gehört, geklopft, geschliffen, bis der gewünschte Ton entsteht.",
+            "Die Bauweise orientiert sich an der traditionellen spanischen Gitarrenkonstruktion und wird durch eigene Ansätze sowie den gezielten Einsatz moderner Messmethoden weiterentwickelt.\n\nEin leicht gebautes Instrument mit hoher Schwingungsfähigkeit steht im Mittelpunkt und sorgt für eine direkte Ansprache und einen offenen Klang.\n\nDie Oberflächen werden von Hand mit Schellack poliert.",
         },
         {
-          title: "Klangideal",
+          title: "Spielbarkeit",
           text:
-            "Ein warmer, tragfähiger Grundton, klare Höhen, ein feines Ansprechverhalten. Ein Instrument, das den Spieler trägt, anstatt ihn zu fordern.",
-        },
-        {
-          title: "Detail",
-          text:
-            "Bindings, Rosette und Kopfplatte werden von Hand eingelegt. Die Oberfläche erhält eine traditionelle Schellack-Politur — dünn, atmend, dem Klang dienlich.",
+            "Damit eine Gitarre zu einem stimmigen Instrument wird, passe ich alle Komponenten so aufeinander ab, dass sich der Klang frei entfalten kann.\n\nZentraler Punkt ist dabei die individuelle Abstimmung auf die Bedürfnisse der Spielenden und eine leichte Spielbarkeit.",
         },
       ],
     },
@@ -263,24 +258,19 @@ export const dict = {
         "My way of building has grown — out of the Spanish tradition and out of thirty years of work in my own workshop. What remains is a quiet, clear line.",
       blocks: [
         {
-          title: "Woods",
+          title: "Tonewoods",
           text:
-            "I use only long-aged, carefully chosen tonewoods. Tops in European spruce or western red cedar; backs and sides in rosewood, maple or ziricote.",
+            "Every piece of wood brings its own properties, which are taken into account in the instrument.\n\nFor the top I use spruce or cedar; for back and sides both tropical and native woods from the stock that Michael Wichmann has built up over decades.\n\nSelected tonewoods form the foundation of every guitar.",
         },
         {
           title: "Construction",
           text:
-            "Classical fan bracing in fine execution. Each top is voiced individually — listened to, tapped, thinned, until the desired tone emerges.",
+            "The construction is based on the traditional Spanish guitar making and is further developed through my own approaches and the targeted use of modern measuring methods.\n\nA lightly built instrument with high responsiveness is at the centre, allowing a direct attack and an open sound.\n\nThe surfaces are hand-polished with shellac.",
         },
         {
-          title: "Tonal Ideal",
+          title: "Playability",
           text:
-            "A warm, carrying fundamental, clear highs, a fine response. An instrument that carries the player, rather than demanding from them.",
-        },
-        {
-          title: "Detail",
-          text:
-            "Bindings, rosette and headstock are inlaid by hand. The surface receives a traditional French polish — thin, breathing, in the service of the sound.",
+            "For a guitar to become a coherent instrument, I match all components so that the sound can unfold freely.\n\nThe central point is the individual adjustment to the needs of the player and an easy playability.",
         },
       ],
     },
