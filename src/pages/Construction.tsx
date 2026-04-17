@@ -89,24 +89,26 @@ const Construction = () => {
               watchReverse ? "md:order-2" : "md:order-1"
             }`}
           >
-            <div className="max-w-md mx-auto overflow-hidden rounded-2xl bg-muted">
+            <div className="max-w-md mx-auto">
               <blockquote
                 className="instagram-media"
-                data-instgrm-captioned
-                data-instgrm-permalink="https://www.instagram.com/dittmann.guitars/"
+                data-instgrm-permalink="https://www.instagram.com/reel/DWT_RBYjOi7/?utm_source=ig_embed&utm_campaign=loading"
                 data-instgrm-version="14"
                 style={{
-                  background: "hsl(var(--muted))",
+                  background: "#FFF",
                   border: 0,
-                  margin: 0,
-                  maxWidth: "100%",
+                  borderRadius: "3px",
+                  boxShadow:
+                    "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
+                  margin: "1px",
+                  maxWidth: "540px",
                   minWidth: "280px",
                   padding: 0,
                   width: "100%",
                 }}
               >
                 <a
-                  href="https://www.instagram.com/dittmann.guitars/"
+                  href="https://www.instagram.com/reel/DWT_RBYjOi7/?utm_source=ig_embed&utm_campaign=loading"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block p-8 text-center font-display text-sm text-muted-foreground"
