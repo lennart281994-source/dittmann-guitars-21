@@ -99,7 +99,7 @@ export const dict = {
         "Mein Bauverständnis ist gewachsen — aus der Tradition spanischer Meister und aus dreißig Jahren eigener Werkstattarbeit. Was bleibt, ist eine ruhige, klare Linie.",
       watchTitle: "Bauweise ansehen",
       watchText:
-        "Einblicke aus der Werkstatt — kurze Momente aus dem Bau meiner Gitarren.",
+        "Einblicke aus der Werkstatt. Hier begleite ich meine Arbeit auf Social Media.",
       blocks: [
         {
           title: "Tonhölzer",
