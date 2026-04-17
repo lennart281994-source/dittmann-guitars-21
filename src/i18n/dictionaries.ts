@@ -29,7 +29,7 @@ export const dict = {
       twoPathsKicker: "Zwei Wege",
       pathAvailable: "Verfügbare Gitarren",
       pathCommission: "Individuelle Anfertigung",
-      aboutTitle: "Über den Erbauer",
+      aboutTitle: "Über",
       aboutText:
         "Meine Faszination für die klassische Gitarre begann während meiner Zeit in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre berührt mich immer wieder und führt mich zurück an diesen Ort. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten, die aus Neugier entstanden, führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle dort meine eigene klangliche Handschrift im Gitarrenbau",
       philosophy: "Jedes Stück Holz hat seinen eigenen Charakter.",
