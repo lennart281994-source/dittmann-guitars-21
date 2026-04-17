@@ -1,6 +1,6 @@
 import { useT } from "@/i18n/useT";
 import { cn } from "@/lib/utils";
-import img1 from "@/assets/instrument-1.jpg";
+import img1 from "@/assets/instrument-1.png";
 import img2 from "@/assets/instrument-2.jpg";
 import img3 from "@/assets/instrument-3.jpg";
 
