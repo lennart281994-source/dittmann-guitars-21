@@ -52,7 +52,7 @@ const Home = () => {
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image with soft crossfade */}
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-muted">
+          <div className="relative aspect-[4/5] w-full max-w-sm md:max-w-md mx-auto max-h-[70vh] overflow-hidden rounded-2xl bg-muted">
             <img
               src={pathAvailable}
               alt=""
