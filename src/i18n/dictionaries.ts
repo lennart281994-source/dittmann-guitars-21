@@ -30,7 +30,7 @@ export const dict = {
       pathCommission: "Auftragsbau",
       aboutTitle: "Über den Erbauer",
       aboutText:
-        "Seit über drei Jahrzehnten widme ich mich dem Bau von Konzertgitarren. Jedes Instrument entsteht in stiller, sorgfältiger Arbeit — geprägt von gewähltem Holz, ruhiger Hand und einem klaren Klangideal.",
+        "Meine Faszination für die klassische Gitarre begann während meiner Zeit in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre berührt mich immer wieder und führt mich zurück an diesen Ort. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten, die aus Neugier entstanden, führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle dort meine eigene klangliche Handschrift im Gitarrenbau",
       philosophy: "Ein Instrument ist erst vollendet, wenn es gehört wird.",
       processKicker: "Werkstatt",
       processLink: "Die Bauweise ansehen",
