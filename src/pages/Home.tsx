@@ -150,9 +150,14 @@ const Home = () => {
       <section className="py-28 md:py-40">
         <div className="container max-w-3xl text-center">
           <div className="border-t border-border/70" />
-          <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-foreground py-16 md:py-20">
-            “{t.home.philosophy}”
-          </p>
+          <div className="py-16 md:py-20 space-y-8 md:space-y-10">
+            <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-foreground">
+              {t.home.philosophy}
+            </p>
+            <p className="font-display text-base md:text-lg leading-relaxed text-muted-foreground whitespace-pre-line max-w-2xl mx-auto">
+              {t.home.philosophyBody}
+            </p>
+          </div>
           <div className="border-b border-border/70" />
         </div>
       </section>
