@@ -24,7 +24,7 @@ export const Footer = () => {
           <a href={`tel:${t.contact.phone.replace(/\s/g, "")}`} className="link-underline block hover:text-foreground transition-soft">
             {t.contact.phone}
           </a>
-          <p className="pt-1">{t.contact.location}</p>
+          
         </div>
 
         <div className="md:flex md:justify-end">
