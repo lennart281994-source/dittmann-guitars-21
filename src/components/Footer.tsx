@@ -17,16 +17,16 @@ export const Footer = () => {
               {t.footer.maker}
             </Link>
             <p className="text-sm text-muted-foreground">{t.footer.tag}</p>
-            <div className="text-sm text-muted-foreground space-y-1 pt-2">
+            <div className="text-sm text-muted-foreground flex flex-col gap-1 pt-2">
               <a
                 href={`mailto:${t.contact.email}`}
-                className="link-underline block hover:text-foreground transition-soft"
+                className="link-underline self-start hover:text-foreground transition-soft"
               >
                 {t.contact.email}
               </a>
               <a
                 href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                className="link-underline block hover:text-foreground transition-soft"
+                className="link-underline self-start hover:text-foreground transition-soft"
               >
                 {t.contact.phone}
               </a>
