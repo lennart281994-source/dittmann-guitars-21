@@ -7,7 +7,7 @@ import img3 from "@/assets/instrument-3.jpg";
 const images = [img1, img2, img3];
 
 const Instruments = () => {
-  const { t } = useT();
+  const { t, locale } = useT();
 
   return (
     <div className="pt-32 md:pt-40">
