@@ -41,74 +41,45 @@ export const dict = {
       contactLink: "Kontakt aufnehmen",
     },
     instruments: {
-      title: "Verfügbare Instrumente",
+      title: "Verfügbare Gitarren",
       intro:
         "Eine kleine Auswahl gerade fertiggestellter Gitarren. Jedes Instrument ist einzigartig — in Holzwahl, Klang und Charakter.",
+      inquireCta: "Anfrage zu diesem Instrument",
       items: [
         {
-          name: "Konzertgitarre — Zeder / Palisander",
+          name: "Konzertgitarre",
           character:
-            "Warm, tragend, mit langer Tonhaltedauer. Eine Gitarre, die in den ersten Stunden zu sich findet und über Jahre weiter reift.",
+            "Ein heller, klarer Klang mit feiner Ansprache. Leicht gebaut, reagiert sie unmittelbar und macht jede Nuance hörbar.",
           specs: [
-            { label: "Decke", value: "Westliche Roteder" },
-            { label: "Boden & Zargen", value: "Indischer Palisander" },
-            { label: "Mensur", value: "650 mm" },
-            { label: "Jahr", value: "2024" },
-          ],
-        },
-        {
-          name: "Konzertgitarre — Fichte / Ahorn",
-          character:
-            "Klar, transparent und ausgewogen. Besonders geeignet für polyphones Spiel und ein offenes, sprechendes Klangbild.",
-          specs: [
-            { label: "Decke", value: "Europäische Fichte" },
-            { label: "Boden & Zargen", value: "Geriegelter Ahorn" },
-            { label: "Mensur", value: "650 mm" },
-            { label: "Jahr", value: "2024" },
-          ],
-        },
-        {
-          name: "Konzertgitarre — Zeder / Ziricote",
-          character:
-            "Dunkel im Grundton, mit feiner Auflösung in den hohen Lagen. Ein Instrument für ruhige, eindringliche Musik.",
-          specs: [
-            { label: "Decke", value: "Westliche Roteder" },
-            { label: "Boden & Zargen", value: "Ziricote" },
-            { label: "Mensur", value: "648 mm" },
-            { label: "Jahr", value: "2023" },
+            { label: "Decke", value: "Fichte" },
+            { label: "Boden & Zargen", value: "Vogelaugen-Ahorn" },
+            { label: "Mensur", value: "640 mm" },
+            { label: "Sattel", value: "52 mm" },
+            { label: "Form und Beleistung", value: "nach Torres FE19" },
+            { label: "Oberfläche", value: "Schellack Handpolitur" },
           ],
         },
       ],
     },
     commission: {
-      title: "Auftragsbau",
-      intro:
-        "Ein Instrument auf Maß zu bauen ist ein gemeinsamer Weg. Er beginnt mit Zuhören und endet mit einer Gitarre, die zu Ihrem Spiel und Ihrer Vorstellung gehört.",
+      title: "Ihr Weg zum Instrument",
+      intro: "",
+      contactCta: "Kontakt aufnehmen",
       sections: [
         {
-          title: "Gespräch",
+          title: "Erleben",
           text:
-            "Am Anfang steht ein Gespräch — über Klangvorstellungen, Spielgewohnheiten, das Repertoire. Vieles entscheidet sich hier, lange bevor das erste Holz gewählt wird.",
+            "Meine verfügbaren Instrumente können nach Absprache im Laden von Michael Wichmann in Hamburg oder in 19294 Malliß in Ruhe angespielt werden.",
         },
         {
-          title: "Planung & Vorlieben",
+          title: "Individuelle Anfertigung",
           text:
-            "Mensur, Halsprofil, Saitenabstand, Decke und Bauart — wir gehen jeden Punkt in Ruhe durch. Persönliche Erfahrungen mit anderen Instrumenten fließen mit ein.",
+            "Gerne baue ich auch Gitarren individuell auf Sie abgestimmt.\n\nIn einem Gespräch – telefonisch oder vor Ort – klären wir Ihre Vorstellungen und die verschiedenen Möglichkeiten.\nNach der Entscheidung folgt die Auswahl der Hölzer.\nAktuell beträgt die Bauzeit etwa drei Monate.\n\nMeine Arbeit wird von Michael Wichmann, mit einem halben Jahrhundert Erfahrung im Gitarrenbau, begleitet.",
         },
         {
-          title: "Holzauswahl",
+          title: "Kennenlernen",
           text:
-            "Aus jahrelang gelagertem Bestand wählen wir gemeinsam Decke, Boden und Zargen. Jedes Stück hat seinen eigenen Charakter — sichtbar und hörbar.",
-        },
-        {
-          title: "Bauphase",
-          text:
-            "Der eigentliche Bau dauert mehrere Monate. Auf Wunsch begleite ich den Prozess mit Bildern und kurzen Berichten aus der Werkstatt.",
-        },
-        {
-          title: "Fertigstellung",
-          text:
-            "Das fertige Instrument wird sorgfältig eingespielt und eingestellt. Die Übergabe erfolgt persönlich, mit Zeit zum Spielen, Hören und Verstehen.",
+            "Am Anfang steht immer ein Gespräch.\nGanz gleich, ob Sie sich für ein bestehendes Instrument interessieren oder ein neues anfertigen lassen möchten: Schreiben Sie mir oder rufen Sie mich an.",
         },
       ],
     },
@@ -181,74 +152,45 @@ export const dict = {
       contactLink: "Get in touch",
     },
     instruments: {
-      title: "Available Instruments",
+      title: "Available Guitars",
       intro:
         "A small selection of recently completed guitars. Each instrument is unique — in wood, in voice, in character.",
+      inquireCta: "Inquire about this instrument",
       items: [
         {
-          name: "Concert Guitar — Cedar / Rosewood",
+          name: "Concert Guitar",
           character:
-            "Warm, carrying, with long sustain. A guitar that finds itself in the first hours and continues to mature over many years.",
+            "A bright, clear sound with fine response. Lightly built, it reacts immediately and makes every nuance audible.",
           specs: [
-            { label: "Top", value: "Western Red Cedar" },
-            { label: "Back & Sides", value: "Indian Rosewood" },
-            { label: "Scale", value: "650 mm" },
-            { label: "Year", value: "2024" },
-          ],
-        },
-        {
-          name: "Concert Guitar — Spruce / Maple",
-          character:
-            "Clear, transparent and balanced. Particularly suited to polyphonic playing and an open, speaking tone.",
-          specs: [
-            { label: "Top", value: "European Spruce" },
-            { label: "Back & Sides", value: "Flamed Maple" },
-            { label: "Scale", value: "650 mm" },
-            { label: "Year", value: "2024" },
-          ],
-        },
-        {
-          name: "Concert Guitar — Cedar / Ziricote",
-          character:
-            "Dark in the fundamental, with fine resolution in the upper register. An instrument for quiet, searching music.",
-          specs: [
-            { label: "Top", value: "Western Red Cedar" },
-            { label: "Back & Sides", value: "Ziricote" },
-            { label: "Scale", value: "648 mm" },
-            { label: "Year", value: "2023" },
+            { label: "Top", value: "Spruce" },
+            { label: "Back & Sides", value: "Bird's-eye Maple" },
+            { label: "Scale", value: "640 mm" },
+            { label: "Nut", value: "52 mm" },
+            { label: "Shape & Bracing", value: "after Torres FE19" },
+            { label: "Finish", value: "French polish (shellac)" },
           ],
         },
       ],
     },
     commission: {
-      title: "Commission a Guitar",
-      intro:
-        "Building an instrument to order is a shared journey. It begins with listening and ends with a guitar that belongs to your playing and your imagination.",
+      title: "Your Path to the Instrument",
+      intro: "",
+      contactCta: "Get in touch",
       sections: [
         {
-          title: "Conversation",
+          title: "Experience",
           text:
-            "It begins with a conversation — about tonal ideas, playing habits, repertoire. Much is decided here, long before the first piece of wood is chosen.",
+            "My available instruments can be played in person, by appointment, at Michael Wichmann's shop in Hamburg or in 19294 Malliß.",
         },
         {
-          title: "Planning & Preferences",
+          title: "Custom Build",
           text:
-            "Scale, neck profile, string spacing, top wood, construction — we go through each point calmly. Your experience with other instruments is part of it.",
+            "I am happy to build guitars individually tailored to you.\n\nIn a conversation – by phone or in person – we discuss your ideas and the various possibilities.\nOnce decided, we choose the woods together.\nCurrent build time is approximately three months.\n\nMy work is accompanied by Michael Wichmann, with half a century of experience in guitar making.",
         },
         {
-          title: "Wood Selection",
+          title: "Getting in Touch",
           text:
-            "From years of carefully aged stock we choose top, back and sides together. Each piece has its own character — visible and audible.",
-        },
-        {
-          title: "Building Phase",
-          text:
-            "The build itself takes several months. On request, I share the process with images and short notes from the workshop.",
-        },
-        {
-          title: "Completion",
-          text:
-            "The finished instrument is carefully played in and set up. Handover is in person, with time to play, listen and understand.",
+            "It always begins with a conversation.\nWhether you are interested in an existing instrument or would like a new one made: write to me or give me a call.",
         },
       ],
     },
