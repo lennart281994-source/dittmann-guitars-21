@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Instruments from "./pages/Instruments";
 import Commission from "./pages/Commission";
 import Construction from "./pages/Construction";
+import Sound from "./pages/Sound";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="instrumente" element={<Instruments />} />
             <Route path="auftragsbau" element={<Commission />} />
             <Route path="bauweise" element={<Construction />} />
+            <Route path="klang" element={<Sound />} />
             <Route path="kontakt" element={<Contact />} />
           </Route>
 
@@ -37,6 +39,7 @@ const App = () => (
             <Route path="instruments" element={<Instruments />} />
             <Route path="commission" element={<Commission />} />
             <Route path="construction" element={<Construction />} />
+            <Route path="sound" element={<Sound />} />
             <Route path="contact" element={<Contact />} />
           </Route>
 
