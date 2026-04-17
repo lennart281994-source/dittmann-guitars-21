@@ -11,19 +11,7 @@ const Instruments = () => {
 
   return (
     <div className="pt-32 md:pt-40">
-      <section className="container max-w-3xl">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
-          {t.nav.instruments}
-        </p>
-        <h1 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.05] text-foreground">
-          {t.instruments.title}
-        </h1>
-        <p className="mt-8 font-display text-xl md:text-2xl leading-snug text-muted-foreground">
-          {t.instruments.intro}
-        </p>
-      </section>
-
-      <div className="container mt-24 md:mt-32 space-y-32 md:space-y-44">
+      <div className="container mt-8 md:mt-12 space-y-32 md:space-y-44">
         {t.instruments.items.map((item, idx) => {
           const reverse = idx % 2 === 1;
           return (
