@@ -69,7 +69,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom: centered copyright */}
-        <div className="mt-12 pt-8 border-t border-border/50 text-center">
+        <div className="mt-6 pt-4 border-t border-border/50 text-center">
           <p className="text-xs text-muted-foreground/80">
             © {year} {t.footer.maker} – Gitarrenbau. {t.footer.rights}
           </p>
