@@ -17,8 +17,9 @@ export type PathKey = keyof typeof paths;
 export const dict = {
   de: {
     nav: {
-      instruments: "Verfügbare Instrumente",
-      commission: "Auftragsbau",
+      guitars: "Gitarren",
+      instruments: "Verfügbare Gitarren",
+      commission: "Individuelle Anfertigung",
       construction: "Bauweise",
       contact: "Kontakt",
     },
@@ -26,8 +27,8 @@ export const dict = {
       heroName: "Michael Dittmann",
       heroSub: "Handgebaute Konzertgitarren",
       twoPathsKicker: "Zwei Wege",
-      pathAvailable: "Verfügbare Instrumente",
-      pathCommission: "Auftragsbau",
+      pathAvailable: "Verfügbare Gitarren",
+      pathCommission: "Individuelle Anfertigung",
       aboutTitle: "Über den Erbauer",
       aboutText:
         "Meine Faszination für die klassische Gitarre begann während meiner Zeit in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre berührt mich immer wieder und führt mich zurück an diesen Ort. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten, die aus Neugier entstanden, führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle dort meine eigene klangliche Handschrift im Gitarrenbau",
