@@ -115,6 +115,13 @@ export const dict = {
         },
       ],
     },
+    sound: {
+      kicker: "Demnächst",
+      title: "Klang",
+      teaser:
+        "Hier entstehen bald\nVideoaufnahmen meiner Gitarren.",
+      note: "Demnächst zu sehen und zu hören.",
+    },
     contact: {
       title: "Kontakt",
       intro: "Ich freue mich auf Ihre Nachricht",
@@ -243,6 +250,13 @@ export const dict = {
             "For a guitar to become a coherent instrument, I match all components so that the sound can unfold freely.\n\nThe central point is the individual adjustment to the needs of the player and an easy playability.",
         },
       ],
+    },
+    sound: {
+      kicker: "Coming soon",
+      title: "Sound",
+      teaser:
+        "Video recordings of my guitars\nwill soon be shared here.",
+      note: "Coming soon — to see and to hear.",
     },
     contact: {
       title: "Contact",
