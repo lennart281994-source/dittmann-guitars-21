@@ -43,7 +43,7 @@ const Commission = () => {
                 </p>
               </div>
               <div className="md:col-span-6">
-                <div className="aspect-[5/4] overflow-hidden rounded-2xl bg-muted">
+                <div className="aspect-[5/4] overflow-hidden rounded-2xl bg-muted max-h-[70vh] mx-auto">
                   <img
                     src={img}
                     alt=""
