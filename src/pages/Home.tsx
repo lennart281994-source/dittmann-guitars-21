@@ -120,30 +120,23 @@ const Home = () => {
       </section>
 
       {/* ABOUT */}
-      <section className="relative w-full overflow-hidden">
-        <div className="aspect-[16/9] md:aspect-[21/9] w-full">
-          <img
-            src={aboutBg}
-            alt=""
-            className="w-full h-full object-cover"
-            width={1920}
-            height={1080}
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/55 to-foreground/20" />
-        </div>
-        <div className="absolute inset-0 flex items-center">
+      <section
+        className="relative w-full overflow-hidden md:aspect-[21/9] bg-cover bg-center"
+        style={{ backgroundImage: `url(${aboutBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/55 to-foreground/45 md:bg-gradient-to-r md:from-foreground/80 md:via-foreground/55 md:to-foreground/20" />
+        <div className="relative md:absolute md:inset-0 md:flex md:items-center py-16 md:py-0">
           <div className="container">
-            <div className="grid md:grid-cols-12 gap-8 md:gap-16 items-center">
+            <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
               <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1 [text-shadow:_0_1px_12px_hsl(var(--foreground)/0.6)]">
                 <p className="text-[11px] uppercase tracking-[0.2em] text-background mb-4 md:mb-6">
                   {t.home.aboutTitle}
                 </p>
-                <p className="font-display leading-snug text-background whitespace-pre-line text-sm md:text-lg">
+                <p className="font-display leading-snug text-background whitespace-pre-line text-base md:text-lg">
                   {t.home.aboutText}
                 </p>
               </div>
-              <div className="md:col-span-5 md:col-start-8 max-w-[180px] md:max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
+              <div className="md:col-span-5 md:col-start-8 max-w-[220px] md:max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
                 <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted shadow-2xl">
                   <img
                     src={maker}
