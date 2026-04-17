@@ -197,7 +197,7 @@ const Home = () => {
               rel="noopener noreferrer"
               className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
             >
-              Bauprozess ansehen
+              {t.home.processLink}
               <ArrowRight className="size-4" />
             </a>
           </div>
