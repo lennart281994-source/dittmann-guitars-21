@@ -238,7 +238,7 @@ export const dict = {
         "My way of building has grown — out of the Spanish tradition and out of thirty years of work in my own workshop. What remains is a quiet, clear line.",
       watchTitle: "Watch construction",
       watchText:
-        "Glimpses from the workshop — short moments from building my guitars.",
+        "Glimpses from the workshop. I share my work on social media.",
       blocks: [
         {
           title: "Tonewoods",
