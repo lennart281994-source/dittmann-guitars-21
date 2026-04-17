@@ -1,16 +1,15 @@
 import { useT } from "@/i18n/useT";
-import wood from "@/assets/wood.jpg";
-import bracing from "@/assets/bracing.jpg";
-import finishing from "@/assets/finishing.jpg";
-import detail from "@/assets/path-available.jpg";
+import tonhoelzer from "@/assets/construction-tonhoelzer.jpg";
+import konstruktion from "@/assets/construction-konstruktion.jpg";
+import spielbarkeit from "@/assets/construction-spielbarkeit.jpg";
 
-const blockImages = [wood, bracing, finishing, detail];
+const blockImages = [tonhoelzer, konstruktion, spielbarkeit];
 
 const Construction = () => {
   const { t } = useT();
 
   return (
-    <div className="pt-32 md:pt-40">
+    <div className="pt-32 md:pt-40 pb-24 md:pb-32">
       <section className="container max-w-3xl">
         <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
           {t.nav.construction}
@@ -23,27 +22,24 @@ const Construction = () => {
         </p>
       </section>
 
-      <div className="container mt-24 md:mt-32 grid md:grid-cols-2 gap-x-16 gap-y-24 md:gap-y-32">
+      <div className="container mt-24 md:mt-32 grid md:grid-cols-3 gap-x-10 lg:gap-x-16 gap-y-16 md:gap-y-24">
         {t.construction.blocks.map((block, idx) => (
           <article key={block.title} className="space-y-6">
-            <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
               <img
                 src={blockImages[idx % blockImages.length]}
                 alt=""
                 className="w-full h-full object-cover"
-                width={1600}
-                height={1200}
+                width={1200}
+                height={1500}
                 loading="lazy"
               />
             </div>
             <div>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-accent">
-                {String(idx + 1).padStart(2, "0")}
-              </p>
-              <h2 className="mt-3 font-display text-2xl md:text-3xl text-foreground tracking-tight">
+              <h2 className="font-display text-2xl md:text-3xl text-foreground tracking-tight">
                 {block.title}
               </h2>
-              <p className="mt-4 font-display text-lg text-muted-foreground leading-relaxed">
+              <p className="mt-4 font-display text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
                 {block.text}
               </p>
             </div>
