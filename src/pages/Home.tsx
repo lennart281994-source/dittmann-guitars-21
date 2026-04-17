@@ -26,7 +26,7 @@ const Home = () => {
           <img
             src={hero}
             alt="Handgebaute Konzertgitarre auf einer Werkbank"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-image-fade-in"
             width={1920}
             height={1280}
           />
