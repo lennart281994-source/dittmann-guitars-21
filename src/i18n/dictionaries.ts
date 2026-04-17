@@ -31,7 +31,7 @@ export const dict = {
       pathCommission: "Anfertigung",
       aboutTitle: "Über",
       aboutText:
-        "Meine Faszination für die klassische Gitarre begann in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\n\nDer Klang einer guten Gitarre führt mich bis heute an diesen Ort zurück. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\n\nNach ersten Instrumenten aus Neugier führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle meine eigene klangliche Handschrift.",
+        "Meine Faszination für die klassische Gitarre begann in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre führt mich bis heute an diesen Ort zurück. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten aus Neugier führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle meine eigene klangliche Handschrift.",
       philosophy: "Jedes Stück Holz hat seinen eigenen Charakter.",
       philosophyBody:
         "Hieraus ein Instrument zu formen, das den Spielenden Raum zur klanglichen Entfaltung gibt, ist der Grundgedanke meiner Arbeit.\n\nDie Basis bilden ausgewählte Tonhölzer, die sich seit Jahrzehnten in der Sammlung von Michael Wichmann befinden.",
