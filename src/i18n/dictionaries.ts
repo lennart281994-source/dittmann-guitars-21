@@ -63,23 +63,29 @@ export const dict = {
     },
     commission: {
       title: "Ihr Weg zum Instrument",
-      intro: "",
+      intro:
+        "Ich baue Gitarren, die auf den Spieler abgestimmt sind.\n\nAm Anfang steht ein Gespräch – telefonisch oder vor Ort.\nGemeinsam klären wir Ihre Vorstellungen und die Möglichkeiten.\n\nNach der Entscheidung folgt die Auswahl der Hölzer.\nDie Bauzeit beträgt aktuell etwa drei Monate.",
       contactCta: "Kontakt aufnehmen",
       sections: [
         {
-          title: "Erleben",
+          title: "Modelle",
           text:
-            "Meine verfügbaren Instrumente können nach Absprache im Laden von Michael Wichmann in Hamburg oder in 19294 Malliß in Ruhe angespielt werden.",
+            "Ich baue Konzert- und Flamencogitarren.\nZukünftig entstehen auch Doubletop-Instrumente.",
         },
         {
-          title: "Individuelle Anfertigung",
+          title: "Materialien",
           text:
-            "Gerne baue ich auch Gitarren individuell auf Sie abgestimmt.\n\nIn einem Gespräch – telefonisch oder vor Ort – klären wir Ihre Vorstellungen und die verschiedenen Möglichkeiten.\nNach der Entscheidung folgt die Auswahl der Hölzer.\nAktuell beträgt die Bauzeit etwa drei Monate.\n\nMeine Arbeit wird von Michael Wichmann, mit einem halben Jahrhundert Erfahrung im Gitarrenbau, begleitet.",
+            "Ich arbeite mit Fichte und Zeder als Deckenholz.\nFür Boden und Zargen stehen sowohl heimische als auch tropische Hölzer zur Auswahl – aus dem Bestand von Michael Wichmann.\n\nAlle Instrumente werden von Hand in Schellack poliert.",
+        },
+        {
+          title: "Begleitung",
+          text:
+            "Meine Arbeit wird von Michael Wichmann begleitet, der auf über fünf Jahrzehnte Erfahrung im Gitarrenbau zurückblickt.",
         },
         {
           title: "Kennenlernen",
           text:
-            "Am Anfang steht immer ein Gespräch.\nGanz gleich, ob Sie sich für ein bestehendes Instrument interessieren oder ein neues anfertigen lassen möchten: Schreiben Sie mir oder rufen Sie mich an.",
+            "Am Anfang steht ein Gespräch.\nOb bestehendes Instrument oder neue Gitarre – schreiben Sie mir oder rufen Sie mich an.",
         },
       ],
     },
@@ -173,24 +179,30 @@ export const dict = {
       ],
     },
     commission: {
-      title: "Your Path to the Instrument",
-      intro: "",
+      title: "Custom Build",
+      intro:
+        "I build guitars tailored to the player.\n\nIt begins with a conversation – by phone or in person.\nTogether we clarify your ideas and the possibilities.\n\nOnce decided, we choose the woods.\nCurrent build time is approximately three months.",
       contactCta: "Get in touch",
       sections: [
         {
-          title: "Experience",
+          title: "Models",
           text:
-            "My available instruments can be played in person, by appointment, at Michael Wichmann's shop in Hamburg or in 19294 Malliß.",
+            "I build classical and flamenco guitars.\nDoubletop instruments will follow in the future.",
         },
         {
-          title: "Custom Build",
+          title: "Materials",
           text:
-            "I am happy to build guitars individually tailored to you.\n\nIn a conversation – by phone or in person – we discuss your ideas and the various possibilities.\nOnce decided, we choose the woods together.\nCurrent build time is approximately three months.\n\nMy work is accompanied by Michael Wichmann, with half a century of experience in guitar making.",
+            "I work with spruce and cedar for the top.\nFor back and sides, both native and tropical woods are available – from Michael Wichmann's stock.\n\nAll instruments are hand-polished with shellac.",
+        },
+        {
+          title: "Mentorship",
+          text:
+            "My work is accompanied by Michael Wichmann, who looks back on more than five decades of experience in guitar making.",
         },
         {
           title: "Getting in Touch",
           text:
-            "It always begins with a conversation.\nWhether you are interested in an existing instrument or would like a new one made: write to me or give me a call.",
+            "It always begins with a conversation.\nWhether an existing instrument or a new guitar – write to me or give me a call.",
         },
       ],
     },

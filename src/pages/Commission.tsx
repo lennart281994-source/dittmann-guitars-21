@@ -7,28 +7,33 @@ const Commission = () => {
 
   return (
     <div className="pt-32 md:pt-40 pb-32">
-      <section className="container max-w-3xl text-center">
-        <h1 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.05] text-foreground">
+      {/* Section 1 — Introduction */}
+      <section className="container max-w-2xl">
+        <h1 className="font-display text-4xl md:text-5xl tracking-tight leading-[1.1] text-foreground">
           {t.commission.title}
         </h1>
+        <p className="mt-10 md:mt-12 font-display text-lg md:text-xl text-muted-foreground leading-[1.7] whitespace-pre-line">
+          {t.commission.intro}
+        </p>
       </section>
 
-      <div className="container max-w-2xl mt-20 md:mt-28 space-y-20 md:space-y-24">
+      {/* Subsequent sections */}
+      <div className="container max-w-2xl mt-32 md:mt-40 space-y-28 md:space-y-36">
         {t.commission.sections.map((section) => (
-          <article key={section.title} className="text-center">
-            <h2 className="font-display text-2xl md:text-3xl text-foreground tracking-tight">
+          <article key={section.title}>
+            <h2 className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground/80">
               {section.title}
             </h2>
-            <p className="mt-6 font-display text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+            <p className="mt-6 font-display text-lg md:text-xl text-foreground/90 leading-[1.7] whitespace-pre-line">
               {section.text}
             </p>
           </article>
         ))}
 
-        <div className="text-center pt-8">
+        <div className="pt-8">
           <Link
             to={contactPath}
-            className="inline-block px-8 py-4 text-[11px] uppercase tracking-[0.2em] text-foreground border border-border hover:border-accent hover:text-accent transition-colors"
+            className="inline-block font-display text-base md:text-lg text-foreground border-b border-border hover:border-accent hover:text-accent transition-colors pb-1"
           >
             {t.commission.contactCta}
           </Link>
