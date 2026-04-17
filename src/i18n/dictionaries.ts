@@ -119,7 +119,7 @@ export const dict = {
       phoneLabel: "Telefon",
       whatsappLabel: "WhatsApp",
       whatsappText: "Direkt schreiben",
-      whatsappHint: "Schreiben Sie mir gerne unkompliziert per WhatsApp – ich antworte persönlich.",
+      whatsappHint: "Schreiben Sie mir gerne unkompliziert per WhatsApp.",
       email: "mail@michaeldittmann.com",
       phone: "+49 1788944568",
       whatsappNumber: "491788944568",
