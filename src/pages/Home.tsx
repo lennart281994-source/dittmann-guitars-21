@@ -164,7 +164,7 @@ const Home = () => {
 
       {/* PROCESS ENTRY */}
       <section className="py-12 md:py-20">
-        <div className="w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden">
           <div className="aspect-[16/9] md:aspect-[21/9] w-full">
             <img
               src={process}
@@ -175,15 +175,18 @@ const Home = () => {
               loading="lazy"
             />
           </div>
-        </div>
-        <div className="container mt-10 md:mt-14 flex justify-center">
-          <Link
-            to={pathFor("construction", locale)}
-            className="link-underline font-display text-lg md:text-xl text-foreground inline-flex items-center gap-3"
-          >
-            {t.home.processLink}
-            <ArrowRight className="size-4" />
-          </Link>
+          <div className="absolute inset-x-0 bottom-0 pointer-events-none">
+            <div className="h-32 bg-gradient-to-t from-foreground/60 to-transparent" />
+          </div>
+          <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
+            <Link
+              to={pathFor("construction", locale)}
+              className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
+            >
+              {t.home.processLink}
+              <ArrowRight className="size-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
