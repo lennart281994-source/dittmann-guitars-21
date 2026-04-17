@@ -50,16 +50,20 @@ const Instruments = () => {
                 <p className="mt-6 font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
                   {item.character}
                 </p>
-                <dl className="mt-10 pt-6 border-t border-border/70 grid grid-cols-2 gap-x-6 gap-y-3 text-xs">
+                <dl className="mt-10 pt-6 border-t border-border/70 space-y-2.5 text-sm">
                   {item.specs.map((spec) => (
-                    <div key={spec.label} className="flex flex-col">
-                      <dt className="uppercase tracking-[0.15em] text-muted-foreground/80 text-[10px]">
-                        {spec.label}
-                      </dt>
-                      <dd className="mt-1 text-foreground/90 font-sans">{spec.value}</dd>
+                    <div key={spec.label} className="text-muted-foreground">
+                      <span className="text-foreground/90">{spec.label}:</span>{" "}
+                      <span>{spec.value}</span>
                     </div>
                   ))}
                 </dl>
+                <a
+                  href={`/${locale}/${locale === "de" ? "kontakt" : "contact"}`}
+                  className="mt-10 inline-block text-[11px] uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 hover:border-accent transition-colors"
+                >
+                  {t.instruments.inquireCta}
+                </a>
               </div>
             </article>
           );
