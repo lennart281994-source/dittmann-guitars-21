@@ -147,7 +147,7 @@ export const dict = {
     nav: {
       home: "Home",
       guitars: "Guitars",
-      instruments: "Available Guitars",
+      instruments: "Guitars",
       commission: "Custom Build",
       construction: "Construction",
       contact: "Contact",
@@ -156,18 +156,18 @@ export const dict = {
       heroName: "Handmade Classical Guitars",
       heroSub: "by Michael Dittmann",
       twoPathsKicker: "Two Paths",
-      pathAvailable: "Available Guitars",
+      pathAvailable: "Guitars",
       pathCommission: "Custom Build",
-      aboutTitle: "About the Maker",
+      aboutTitle: "About",
       aboutText:
-        "For more than three decades I have devoted my work to building classical guitars. Each instrument is made quietly, carefully — shaped by chosen wood, a steady hand, and a clear tonal ideal.",
+        "My fascination for the classical guitar began in Asturias in northern Spain, where I worked on a sanctuary for donkeys.\n\nThe sound of a good guitar still takes me back to that place. In guitar making, I am searching for my own way into this sound.\n\nAfter the first instruments built out of curiosity, my path led me to Michael Wichmann. Since then I have been working and learning in his workshop, developing my own tonal voice.",
       philosophy: "Every piece of wood has its own character.",
       philosophyBody:
         "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
-      processLink: "See the build process",
+      processLink: "Watch process",
       contactInvite:
-        "My instruments can be tried in peace, by appointment, at Michael Wichmann's shop in Hamburg or in Malliß.",
+        "My instruments can be played by appointment, at Michael Wichmann's shop in Hamburg or in Malliß.",
       contactLink: "Get in touch",
     },
     instruments: {
@@ -248,7 +248,7 @@ export const dict = {
       phoneLabel: "Phone",
       whatsappLabel: "WhatsApp",
       whatsappText: "Message me directly",
-      whatsappHint: "Feel free to write to me on WhatsApp – I reply personally.",
+      whatsappHint: "Feel free to write to me on WhatsApp.",
       email: "mail@michaeldittmann.com",
       phone: "+49 1788944568",
       whatsappNumber: "491788944568",
