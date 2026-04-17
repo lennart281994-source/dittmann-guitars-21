@@ -17,6 +17,7 @@ export type PathKey = keyof typeof paths;
 export const dict = {
   de: {
     nav: {
+      home: "Startseite",
       guitars: "Gitarren",
       instruments: "Verfügbare Gitarren",
       commission: "Individuelle Anfertigung",
@@ -144,6 +145,7 @@ export const dict = {
   },
   en: {
     nav: {
+      home: "Home",
       guitars: "Guitars",
       instruments: "Available Guitars",
       commission: "Custom Build",
