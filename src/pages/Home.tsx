@@ -30,16 +30,16 @@ const Home = () => {
             width={1920}
             height={1280}
           />
-          {/* Subtle bottom gradient — barely there, just for text legibility */}
-          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-foreground/20 via-foreground/5 to-transparent" />
+          {/* Subtle left gradient — improves text legibility, leaves the wood on the right untouched */}
+          <div className="absolute inset-y-0 left-0 w-2/3 md:w-1/2 bg-gradient-to-r from-foreground/25 via-foreground/10 to-transparent" />
         </div>
 
-        <div className="relative h-full container flex items-end pb-28 md:pb-36 lg:pb-44">
-          <div className="animate-soft-fade-in pl-2 md:pl-8 lg:pl-12 max-w-3xl">
-            <h1 className="font-display font-light text-background text-5xl md:text-7xl lg:text-8xl leading-[1.02] tracking-tight">
+        <div className="relative h-full container flex items-center">
+          <div className="animate-soft-fade-in pl-2 md:pl-8 lg:pl-12 max-w-3xl -mt-[8vh] md:-mt-[10vh]">
+            <h1 className="font-display font-light text-background text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-[0.01em]">
               {t.home.heroName}
             </h1>
-            <p className="mt-8 md:mt-10 font-sans font-light text-background/80 text-sm md:text-base tracking-[0.15em]">
+            <p className="mt-10 md:mt-14 font-display font-light italic text-background/85 text-base md:text-lg tracking-[0.05em]">
               {t.home.heroSub}
             </p>
           </div>
