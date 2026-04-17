@@ -25,8 +25,8 @@ export const dict = {
       contact: "Kontakt",
     },
     home: {
-      heroName: "Michael Dittmann",
-      heroSub: "Handgebaute Konzertgitarren",
+      heroName: "Handgebaute Konzertgitarren",
+      heroSub: "von Michael Dittmann",
       twoPathsKicker: "Zwei Wege",
       pathAvailable: "Gitarren",
       pathCommission: "Anfertigung",
@@ -153,8 +153,8 @@ export const dict = {
       contact: "Contact",
     },
     home: {
-      heroName: "Michael Dittmann",
-      heroSub: "Handmade Classical Guitars",
+      heroName: "Handmade Classical Guitars",
+      heroSub: "by Michael Dittmann",
       twoPathsKicker: "Two Paths",
       pathAvailable: "Available Guitars",
       pathCommission: "Custom Build",
