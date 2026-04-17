@@ -146,17 +146,22 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PHILOSOPHY STRIP */}
+      {/* CONTACT INVITATION */}
       <section className="py-28 md:py-40">
         <div className="container max-w-3xl text-center">
           <div className="border-t border-border/70" />
           <div className="py-16 md:py-20 space-y-8 md:space-y-10">
             <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-foreground">
-              {t.home.philosophy}
+              {t.home.contactInvite}
             </p>
-            <p className="font-display text-base md:text-lg leading-relaxed text-muted-foreground whitespace-pre-line max-w-2xl mx-auto">
-              {t.home.philosophyBody}
-            </p>
+            <div>
+              <Link
+                to={pathFor("contact", locale)}
+                className="link-underline font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft"
+              >
+                {t.home.contactLink}
+              </Link>
+            </div>
           </div>
           <div className="border-b border-border/70" />
         </div>
@@ -190,19 +195,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CONTACT INVITATION */}
-      <section className="container py-32 md:py-40 text-center">
-        <p className="font-display italic text-xl md:text-2xl text-foreground">
-          {t.home.contactInvite}
+      {/* PHILOSOPHY STRIP */}
+      <section className="container py-32 md:py-40 text-center max-w-3xl">
+        <p className="font-display italic text-xl md:text-2xl text-foreground leading-relaxed">
+          {t.home.philosophy}
         </p>
-        <div className="mt-6">
-          <Link
-            to={pathFor("contact", locale)}
-            className="link-underline font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft"
-          >
-            {t.home.contactLink}
-          </Link>
-        </div>
+        {t.home.philosophyBody && (
+          <p className="mt-6 font-display text-base md:text-lg leading-relaxed text-muted-foreground whitespace-pre-line max-w-2xl mx-auto">
+            {t.home.philosophyBody}
+          </p>
+        )}
       </section>
     </>
   );

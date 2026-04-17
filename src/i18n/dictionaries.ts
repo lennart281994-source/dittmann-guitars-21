@@ -37,7 +37,8 @@ export const dict = {
         "Hieraus ein Instrument zu formen, das den Spielenden Raum zur klanglichen Entfaltung gibt, ist der Grundgedanke meiner Arbeit.\n\nDie Basis bilden ausgewählte Tonhölzer, die sich seit Jahrzehnten in der Sammlung von Michael Wichmann befinden.",
       processKicker: "Werkstatt",
       processLink: "Bauprozess ansehen",
-      contactInvite: "Jedes Instrument beginnt mit einem Gespräch.",
+      contactInvite:
+        "Meine Instrumente können nach Absprache in Michael Wichmanns Laden in Hamburg oder in Malliß in Ruhe angespielt werden.",
       contactLink: "Kontakt aufnehmen",
     },
     instruments: {
@@ -163,7 +164,8 @@ export const dict = {
         "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
       processLink: "See the build process",
-      contactInvite: "Every instrument begins with a conversation.",
+      contactInvite:
+        "My instruments can be tried in peace, by appointment, at Michael Wichmann's shop in Hamburg or in Malliß.",
       contactLink: "Get in touch",
     },
     instruments: {
