@@ -32,13 +32,13 @@ const Instruments = () => {
               className="grid md:grid-cols-12 gap-10 md:gap-16 items-center"
             >
               <div className={cn("md:col-span-7", reverse && "md:order-2 md:col-start-6")}>
-                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted max-h-[75vh] mx-auto">
+                <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-background max-h-[80vh] mx-auto">
                   <img
                     src={images[idx % images.length]}
                     alt={item.name}
-                    className="w-full h-full object-cover"
-                    width={1600}
-                    height={1280}
+                    className="w-full h-full object-contain"
+                    width={1280}
+                    height={1700}
                     loading="lazy"
                   />
                 </div>
