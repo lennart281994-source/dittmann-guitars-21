@@ -37,7 +37,8 @@ export const dict = {
         "Hieraus ein Instrument zu formen, das den Spielenden Raum zur klanglichen Entfaltung gibt, ist der Grundgedanke meiner Arbeit.\n\nDie Basis bilden ausgewählte Tonhölzer, die sich seit Jahrzehnten in der Sammlung von Michael Wichmann befinden.",
       processKicker: "Werkstatt",
       processLink: "Bauprozess ansehen",
-      contactInvite: "Jedes Instrument beginnt mit einem Gespräch.",
+      contactInvite:
+        "Meine Instrumente können nach Absprache in Michael Wichmanns Laden in Hamburg oder in Malliß in Ruhe angespielt werden.",
       contactLink: "Kontakt aufnehmen",
     },
     instruments: {
