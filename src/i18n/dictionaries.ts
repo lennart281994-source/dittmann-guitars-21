@@ -164,7 +164,8 @@ export const dict = {
         "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
       processLink: "See the build process",
-      contactInvite: "Every instrument begins with a conversation.",
+      contactInvite:
+        "My instruments can be tried in peace, by appointment, at Michael Wichmann's shop in Hamburg or in Malliß.",
       contactLink: "Get in touch",
     },
     instruments: {
