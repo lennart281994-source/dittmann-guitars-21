@@ -1,0 +1,72 @@
+import { useT } from "@/i18n/useT";
+import { cn } from "@/lib/utils";
+import img1 from "@/assets/instrument-1.jpg";
+import img2 from "@/assets/instrument-2.jpg";
+import img3 from "@/assets/instrument-3.jpg";
+
+const images = [img1, img2, img3];
+
+const Instruments = () => {
+  const { t } = useT();
+
+  return (
+    <div className="pt-32 md:pt-40">
+      <section className="container max-w-3xl">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
+          {t.nav.instruments}
+        </p>
+        <h1 className="font-display text-4xl md:text-6xl tracking-tight leading-[1.05] text-foreground">
+          {t.instruments.title}
+        </h1>
+        <p className="mt-8 font-display text-xl md:text-2xl leading-snug text-muted-foreground">
+          {t.instruments.intro}
+        </p>
+      </section>
+
+      <div className="container mt-24 md:mt-32 space-y-32 md:space-y-44">
+        {t.instruments.items.map((item, idx) => {
+          const reverse = idx % 2 === 1;
+          return (
+            <article
+              key={item.name}
+              className="grid md:grid-cols-12 gap-10 md:gap-16 items-center"
+            >
+              <div className={cn("md:col-span-7", reverse && "md:order-2 md:col-start-6")}>
+                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted">
+                  <img
+                    src={images[idx % images.length]}
+                    alt={item.name}
+                    className="w-full h-full object-cover"
+                    width={1600}
+                    height={1280}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div className={cn("md:col-span-5", reverse && "md:order-1 md:col-start-1 md:row-start-1")}>
+                <h2 className="font-display text-2xl md:text-3xl text-foreground tracking-tight leading-snug">
+                  {item.name}
+                </h2>
+                <p className="mt-6 font-display text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  {item.character}
+                </p>
+                <dl className="mt-10 pt-6 border-t border-border/70 grid grid-cols-2 gap-x-6 gap-y-3 text-xs">
+                  {item.specs.map((spec) => (
+                    <div key={spec.label} className="flex flex-col">
+                      <dt className="uppercase tracking-[0.15em] text-muted-foreground/80 text-[10px]">
+                        {spec.label}
+                      </dt>
+                      <dd className="mt-1 text-foreground/90 font-sans">{spec.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Instruments;
