@@ -123,8 +123,8 @@ const Home = () => {
       {/* ABOUT */}
       <section className="container py-24 md:py-32">
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
-          <div className="md:col-span-5">
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+          <div className="md:col-span-5 max-w-md mx-auto md:mx-0 w-full">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted max-h-[70vh]">
               <img
                 src={maker}
                 alt="Michael Dittmann in seiner Werkstatt"
