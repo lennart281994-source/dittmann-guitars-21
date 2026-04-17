@@ -135,7 +135,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="md:col-span-6 md:col-start-7 max-w-md">
+          <div className="md:col-span-6 md:col-start-7 max-w-md lg:max-w-lg">
             <p className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground mb-6">
               {t.home.aboutTitle}
             </p>
