@@ -181,7 +181,7 @@ export const dict = {
       philosophyBody:
         "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
-      processLink: "See the construction",
+      processLink: "See the build process",
       contactInvite: "Every instrument begins with a conversation.",
       contactLink: "Get in touch",
     },
