@@ -31,7 +31,9 @@ export const dict = {
       aboutTitle: "Über den Erbauer",
       aboutText:
         "Meine Faszination für die klassische Gitarre begann während meiner Zeit in Asturien im Norden Spaniens, wo ich auf einem Gnadenhof für Esel gearbeitet habe.\n\nDer Klang einer guten Gitarre berührt mich immer wieder und führt mich zurück an diesen Ort. Im Gitarrenbau suche ich meinen eigenen Zugang zu diesem Klang.\n\nNach ersten Instrumenten, die aus Neugier entstanden, führte mich mein Weg zu Michael Wichmann. Seitdem arbeite und lerne ich in seiner Werkstatt und entwickle dort meine eigene klangliche Handschrift im Gitarrenbau",
-      philosophy: "Ein Instrument ist erst vollendet, wenn es gehört wird.",
+      philosophy: "Jedes Stück Holz hat seinen eigenen Charakter.",
+      philosophyBody:
+        "Hieraus ein Instrument zu formen, das den Spielenden Raum zur klanglichen Entfaltung gibt, ist der Grundgedanke meiner Arbeit.\n\nDie Basis bilden ausgewählte Tonhölzer, die sich seit Jahrzehnten in der Sammlung von Michael Wichmann befinden.",
       processKicker: "Werkstatt",
       processLink: "Die Bauweise ansehen",
       contactInvite: "Jedes Instrument beginnt mit einem Gespräch.",
@@ -173,7 +175,9 @@ export const dict = {
       aboutTitle: "About the Maker",
       aboutText:
         "For more than three decades I have devoted my work to building classical guitars. Each instrument is made quietly, carefully — shaped by chosen wood, a steady hand, and a clear tonal ideal.",
-      philosophy: "An instrument is only complete once it is heard.",
+      philosophy: "Every piece of wood has its own character.",
+      philosophyBody:
+        "Shaping it into an instrument that gives the player room for tonal expression is the guiding idea of my work.\n\nThe foundation is formed by selected tonewoods that have been part of Michael Wichmann's collection for decades.",
       processKicker: "Workshop",
       processLink: "See the construction",
       contactInvite: "Every instrument begins with a conversation.",
