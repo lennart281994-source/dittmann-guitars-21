@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         display: ['"Fraunces"', "ui-serif", "Georgia", "serif"],
         sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
+        script: ['"Great Vibes"', "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
