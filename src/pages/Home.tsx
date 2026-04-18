@@ -73,10 +73,10 @@ const Home = () => {
 
         <div className="relative h-full container flex items-center">
           <div className="animate-soft-fade-in pl-2 md:pl-8 lg:pl-12 max-w-3xl -mt-[8vh] md:-mt-[10vh]">
-            <h1 className="font-script font-normal text-background text-6xl md:text-8xl lg:text-9xl leading-[1.05] tracking-[0.01em]">
+            <h1 className="font-display font-light text-background text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-[0.01em]">
               {t.home.heroName}
             </h1>
-            <p className="mt-10 md:mt-14 font-display font-light italic text-background/85 text-base md:text-lg tracking-[0.05em]">
+            <p className="mt-10 md:mt-14 font-script font-normal text-background/90 text-3xl md:text-4xl lg:text-5xl tracking-[0.01em]">
               {t.home.heroSub}
             </p>
           </div>
