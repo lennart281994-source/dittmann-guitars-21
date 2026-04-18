@@ -16,7 +16,7 @@ export default {
       fontFamily: {
         display: ['"Fraunces"', "ui-serif", "Georgia", "serif"],
         sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
-        script: ['"Parisienne"', "cursive"],
+        script: ['"Allura"', "cursive"],
       },
       colors: {
         border: "hsl(var(--border))",
