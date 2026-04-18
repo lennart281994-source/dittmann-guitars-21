@@ -76,7 +76,7 @@ const Home = () => {
             <h1 className="font-display font-light text-background text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-[0.01em]">
               {t.home.heroName}
             </h1>
-            <p className="mt-10 md:mt-14 font-script font-normal text-background/90 text-3xl md:text-4xl lg:text-5xl tracking-[0.01em]">
+            <p className="mt-10 md:mt-14 font-display font-light italic text-background/85 text-base md:text-lg tracking-[0.05em]">
               {t.home.heroSub}
             </p>
           </div>
