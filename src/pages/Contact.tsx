@@ -29,9 +29,7 @@ const Contact = () => {
     toast({ title: t.contact.formSuccess });
   };
 
-  const whatsappHref = `https://wa.me/${t.contact.whatsappNumber}?text=${encodeURIComponent(
-    t.contact.whatsappPrefill
-  )}`;
+  const whatsappHref = `https://wa.me/${t.contact.whatsappNumber}`;
 
   return (
     <div className="pt-32 md:pt-40 pb-32">
