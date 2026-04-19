@@ -141,7 +141,7 @@ export const LegalDialogs = () => {
                 <h4 className="font-medium text-foreground mt-3">Hinweis zur verantwortlichen Stelle</h4>
                 <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
                 <p>Michael-Lennart Dittmann<br />Schulberg 1<br />25355 Lutzhorn</p>
-                <p>Telefon: 01788944568<br />E-Mail: mail@michaeldittmann.com</p>
+                <p>Telefon: +49 1784159440<br />E-Mail: mail@michaeldittmann.com</p>
                 <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
 
                 <h4 className="font-medium text-foreground mt-3">Speicherdauer</h4>
