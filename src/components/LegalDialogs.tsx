@@ -50,7 +50,7 @@ export const LegalDialogs = () => {
 
               <section>
                 <p className="font-medium text-foreground">Kontakt:</p>
-                <p>Telefon: 01788944568</p>
+                <p>Telefon: +49 1784159440</p>
                 <p>
                   E-Mail:{" "}
                   <a
