@@ -88,8 +88,7 @@ export const dict = {
         },
         {
           title: "Kennenlernen",
-          text:
-            "Am Anfang steht ein Gespräch.\nOb bestehendes Instrument oder neue Gitarre – schreiben Sie mir oder rufen Sie mich an.",
+          text: "Ob bestehendes Instrument oder neue Gitarre – schreiben Sie mir oder rufen Sie mich an.",
         },
       ],
     },
@@ -227,8 +226,7 @@ export const dict = {
         },
         {
           title: "Getting in Touch",
-          text:
-            "It always begins with a conversation.\nWhether an existing instrument or a new guitar – write to me or give me a call.",
+          text: "Whether an existing instrument or a new guitar – write to me or give me a call.",
         },
       ],
     },
