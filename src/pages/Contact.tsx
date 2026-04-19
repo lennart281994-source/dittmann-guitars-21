@@ -13,20 +13,48 @@ const Contact = () => {
   });
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = schema.safeParse(form);
     if (!result.success) {
       toast({ title: t.contact.formError, variant: "destructive" });
       return;
     }
-    const subject = encodeURIComponent("Kontakt über michaeldittmann.com");
-    const body = encodeURIComponent(
-      `${result.data.message}\n\n— ${result.data.name}\n${result.data.email}`
-    );
-    window.location.href = `mailto:${t.contact.email}?subject=${subject}&body=${body}`;
-    toast({ title: t.contact.formSuccess });
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "63fbed01-4229-474d-8133-ce20015c7cd6",
+          name: result.data.name,
+          email: result.data.email,
+          message: result.data.message,
+          subject: `Kontakt über michaeldittmann.com — ${result.data.name}`,
+          from_name: "michaeldittmann.com",
+          replyto: result.data.email,
+          botcheck: "",
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        toast({ title: t.contact.formSuccess });
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        toast({ title: t.contact.formSendError, variant: "destructive" });
+      }
+    } catch {
+      toast({ title: t.contact.formSendError, variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const whatsappHref = `https://wa.me/${t.contact.whatsappNumber}`;
@@ -105,6 +133,15 @@ const Contact = () => {
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-10">
+            {/* Honeypot field for spam protection — hidden from real users */}
+            <input
+              type="checkbox"
+              name="botcheck"
+              tabIndex={-1}
+              autoComplete="off"
+              style={{ display: "none" }}
+              aria-hidden="true"
+            />
             <div>
               <label
                 htmlFor="name"
@@ -158,9 +195,10 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="inline-block px-10 py-4 text-[11px] uppercase tracking-[0.25em] text-foreground border border-border hover:border-accent hover:text-accent transition-colors"
+              disabled={isSubmitting}
+              className="inline-block px-10 py-4 text-[11px] uppercase tracking-[0.25em] text-foreground border border-border hover:border-accent hover:text-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {t.contact.formSubmit}
+              {isSubmitting ? t.contact.formSubmitting : t.contact.formSubmit}
             </button>
           </form>
         </div>

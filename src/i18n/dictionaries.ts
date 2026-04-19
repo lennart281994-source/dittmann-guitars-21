@@ -141,8 +141,10 @@ export const dict = {
       formEmail: "Ihre E-Mail-Adresse",
       formMessage: "Ihre Nachricht",
       formSubmit: "Nachricht senden",
-      formSuccess: "Vielen Dank — Ihre Nachricht ist unterwegs.",
+      formSubmitting: "Wird gesendet…",
+      formSuccess: "Vielen Dank — Ihre Nachricht ist angekommen.",
       formError: "Bitte überprüfen Sie Ihre Eingaben.",
+      formSendError: "Senden fehlgeschlagen. Bitte später erneut versuchen oder direkt per E-Mail schreiben.",
     },
     footer: {
       maker: "Michael Dittmann",
@@ -279,8 +281,10 @@ export const dict = {
       formEmail: "Your email address",
       formMessage: "Your message",
       formSubmit: "Send message",
-      formSuccess: "Thank you — your message is on its way.",
+      formSubmitting: "Sending…",
+      formSuccess: "Thank you — your message has arrived.",
       formError: "Please check your entries.",
+      formSendError: "Sending failed. Please try again later or email us directly.",
     },
     footer: {
       maker: "Michael Dittmann",
