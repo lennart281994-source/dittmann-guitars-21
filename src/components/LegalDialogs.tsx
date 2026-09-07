@@ -44,8 +44,8 @@ export const LegalDialogs = () => {
                 </h3>
                 <p className="font-medium text-foreground">Betreiber der Website:</p>
                 <p>Michael-Lennart Dittmann</p>
-                <p>Schulberg 1</p>
-                <p>25355 Lutzhorn</p>
+                <p>Am Mühlenberg 1</p>
+                <p>19294 Malliß</p>
               </section>
 
               <section>
@@ -75,8 +75,8 @@ export const LegalDialogs = () => {
                   Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
                 </p>
                 <p>Michael-Lennart Dittmann</p>
-                <p>Schulberg 1</p>
-                <p>25355 Lutzhorn</p>
+                <p>Am Mühlenberg 1</p>
+                <p>19294 Malliß</p>
               </section>
             </div>
           </ScrollArea>
@@ -140,7 +140,7 @@ export const LegalDialogs = () => {
 
                 <h4 className="font-medium text-foreground mt-3">Hinweis zur verantwortlichen Stelle</h4>
                 <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-                <p>Michael-Lennart Dittmann<br />Schulberg 1<br />25355 Lutzhorn</p>
+                <p>Michael-Lennart Dittmann<br />Am Mühlenberg 1<br />19294 Malliß</p>
                 <p>Telefon: +49 1784159440<br />E-Mail: mail@michaeldittmann.com</p>
                 <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
 
