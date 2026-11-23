@@ -10,6 +10,7 @@ import Commission from "./pages/Commission";
 import Construction from "./pages/Construction";
 import Sound from "./pages/Sound";
 import Contact from "./pages/Contact";
+import Impressum from "./pages/Impressum";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,11 @@ const App = () => (
             <Route path="construction" element={<Construction />} />
             <Route path="sound" element={<Sound />} />
             <Route path="contact" element={<Contact />} />
+          </Route>
+
+          {/* Legal */}
+          <Route path="/impressum" element={<Layout />}>
+            <Route index element={<Impressum />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />
