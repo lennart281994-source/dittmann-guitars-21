@@ -1,3 +1,4 @@
+import soundThumb from "@/assets/sound-video-thumb.jpg";
 import { ExternalEmbed } from "@/components/ExternalEmbed";
 import { useT } from "@/i18n/useT";
 
@@ -19,9 +20,9 @@ const Sound = () => {
 
         {/* YouTube embed — erweiterter Datenschutzmodus (youtube-nocookie) */}
         <div className="w-full aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
-          <ExternalEmbed provider="YouTube" className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
+          <ExternalEmbed provider="YouTube" poster={soundThumb} className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0"
+            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0?autoplay=1"
             title="Klangbeispiel — Gitarre von Michael Dittmann"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

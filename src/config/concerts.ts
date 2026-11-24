@@ -2,9 +2,9 @@
 // ATELIERKONZERTE — alle Inhalte & Einstellungen an einem Ort.
 // Bilder und Texte hier austauschen; Widgets hier eintragen.
 // ============================================================
-import heroAsset from "@/assets/wichmann-workshop.webp.asset.json";
+import heroImage from "@/assets/wichmann-workshop.webp";
 import ideaImage from "@/assets/process.jpg";
-import nextArtistAsset from "@/assets/daniel-molina-gitarre.jpg.asset.json";
+import nextArtistImage from "@/assets/daniel-molina-gitarre.jpg";
 
 export const concertsConfig = {
   // pretix: Adresse der Veranstaltung (oder des Shops), z. B.
@@ -27,12 +27,12 @@ export const concertsConfig = {
   musicianSubject: "Auftritt bei den Atelierkonzerten",
   instagramUrl: "https://www.instagram.com/dittmann.guitars/",
 
-  images: { hero: heroAsset.url, idea: ideaImage },
+  images: { hero: heroImage, idea: ideaImage },
 
   // Nächstes Konzert — wird nur angezeigt, wenn pretixEventUrl gesetzt ist.
   nextConcert: {
     artist: "Daniel Molina",
-    image: nextArtistAsset.url,
+    image: nextArtistImage,
     date: "Sonntag, 13. Dezember 2026",
     time: "17:00 Uhr",
     venue: "Gitarrenatelier Michael Wichmann, Hamburg",

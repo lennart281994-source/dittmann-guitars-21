@@ -1,3 +1,4 @@
+import soundThumb from "@/assets/sound-video-thumb.jpg";
 import { ExternalEmbed } from "@/components/ExternalEmbed";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
@@ -5,8 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { pathFor, useT } from "@/i18n/useT";
 import { cn } from "@/lib/utils";
 import hero from "@/assets/hero.jpg";
-import pathAvailableAsset from "@/assets/guitar-rosette.webp.asset.json";
-const pathAvailable = pathAvailableAsset.url;
+import pathAvailable from "@/assets/guitar-rosette.webp";
 import pathCommission from "@/assets/path-commission.jpg";
 import maker from "@/assets/maker.jpg";
 import process from "@/assets/process.jpg";
@@ -274,9 +274,9 @@ const Home = () => {
       {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
       <section className="container pb-16 md:pb-24">
         <div className="mx-auto w-full max-w-3xl aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
-          <ExternalEmbed provider="YouTube" className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
+          <ExternalEmbed provider="YouTube" poster={soundThumb} className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0"
+            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0?autoplay=1"
             title="Klangbeispiel — Gitarre von Michael Dittmann"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
