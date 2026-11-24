@@ -227,7 +227,21 @@ const Concerts = () => {
           </div>
           <div className="mt-4 mx-auto max-w-xl">
             {c.brevoFormUrl ? (
-              <ExternalEmbed provider="Brevo, Google reCAPTCHA" buttonLabel="Anmeldeformular laden" className="min-h-[220px]" note={t.newsletterLoadNote}>
+              <ExternalEmbed
+                provider="Brevo, Google reCAPTCHA"
+                buttonLabel="Anmeldeformular laden"
+                className="min-h-[220px]"
+                note={t.newsletterLoadNote}
+                preview={
+                  <div className="rounded-xl border border-border bg-background p-5 text-left space-y-3">
+                    <label className="block text-sm text-foreground">E-Mail-Adresse
+                      <input type="email" placeholder="deine@email.de" className="mt-1 w-full rounded-md border border-input bg-background px-3 py-2 text-sm" />
+                    </label>
+                    <button type="button" className="w-full rounded-full bg-accent text-accent-foreground px-6 py-2.5 text-xs uppercase tracking-[0.18em]">Anmelden</button>
+                    <p className="text-[11px] text-muted-foreground">Beim Antippen wird das Formular von Brevo (inkl. Google reCAPTCHA) geladen.</p>
+                  </div>
+                }
+              >
                 <iframe src={c.brevoFormUrl} title="Newsletter-Anmeldung" className="w-full h-[520px] md:h-[460px] border-0 rounded-xl" loading="lazy" />
               </ExternalEmbed>
             ) : (

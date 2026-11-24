@@ -8,9 +8,11 @@ export const ExternalEmbed = ({
   buttonLabel,
   className = "",
   poster,
+  preview,
   children,
 }: {
   poster?: string;
+  preview?: ReactNode;
   provider: string;
   note: string;
   buttonLabel: string;
@@ -19,6 +21,14 @@ export const ExternalEmbed = ({
 }) => {
   const [active, setActive] = useState(false);
   if (active) return <>{children}</>;
+  if (preview) {
+    // Vorschau sieht aus wie das echte Formular; erste Berührung lädt es.
+    return (
+      <div className={className} onPointerDown={() => setActive(true)} onFocusCapture={() => setActive(true)}>
+        {preview}
+      </div>
+    );
+  }
   if (poster) {
     // Lokales Vorschaubild: sieht aus wie ein Video, verbindet aber erst nach Klick zu YouTube.
     return (
