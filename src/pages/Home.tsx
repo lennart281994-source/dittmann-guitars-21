@@ -174,6 +174,86 @@ const Home = () => {
         </div>
       </section>
 
+      {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
+      <section className="container pb-16 md:pb-24">
+        <div className="mx-auto w-full max-w-3xl aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
+          <ExternalEmbed provider="YouTube" poster={soundThumb} className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0?autoplay=1"
+            title="Klangbeispiel — Gitarre von Michael Dittmann"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+            className="h-full w-full"
+          />
+          </ExternalEmbed>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section
+        className="relative w-full overflow-hidden md:aspect-[21/9] bg-cover bg-center"
+        style={{ backgroundImage: `url(${aboutBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/55 to-foreground/45 md:bg-gradient-to-r md:from-foreground/80 md:via-foreground/55 md:to-foreground/20" />
+        <div className="relative md:absolute md:inset-0 md:flex md:items-center py-16 md:py-0">
+          <div className="container">
+            <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
+              <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1 [text-shadow:_0_1px_12px_hsl(var(--foreground)/0.6)]">
+                <p className="text-[11px] uppercase tracking-[0.2em] text-background mb-4 md:mb-6">
+                  {t.home.aboutTitle}
+                </p>
+                <p className="font-display leading-snug text-background whitespace-pre-line text-base md:text-lg">
+                  {t.home.aboutText}
+                </p>
+              </div>
+              <div className="md:col-span-5 md:col-start-8 max-w-[220px] md:max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
+                <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted shadow-2xl">
+                  <img
+                    src={maker}
+                    alt="Michael Dittmann in seiner Werkstatt"
+                    className="w-full h-full object-cover"
+                    width={1280}
+                    height={1600}
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROCESS ENTRY */}
+      <section className="py-12 md:py-20">
+        <div className="relative w-full overflow-hidden">
+          <div className="aspect-[16/9] md:aspect-[21/9] w-full">
+            <img
+              src={process}
+              alt="Werkstatt mit Tonhölzern und Gitarrenkörpern"
+              className="w-full h-full object-cover"
+              width={1920}
+              height={1080}
+              loading="lazy"
+            />
+          </div>
+          <div className="absolute inset-x-0 bottom-0 pointer-events-none">
+            <div className="h-32 bg-gradient-to-t from-foreground/60 to-transparent" />
+          </div>
+          <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
+            <a
+              href="https://www.instagram.com/dittmann.guitars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
+            >
+              {t.home.processLink}
+              <ArrowRight className="size-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ATELIERKONZERTE */}
       <section className="pb-20 md:pb-32">
         <Link
@@ -216,40 +296,6 @@ const Home = () => {
         </Link>
       </section>
 
-      {/* ABOUT */}
-      <section
-        className="relative w-full overflow-hidden md:aspect-[21/9] bg-cover bg-center"
-        style={{ backgroundImage: `url(${aboutBg})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/55 to-foreground/45 md:bg-gradient-to-r md:from-foreground/80 md:via-foreground/55 md:to-foreground/20" />
-        <div className="relative md:absolute md:inset-0 md:flex md:items-center py-16 md:py-0">
-          <div className="container">
-            <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-              <div className="md:col-span-6 max-w-md lg:max-w-lg order-2 md:order-1 [text-shadow:_0_1px_12px_hsl(var(--foreground)/0.6)]">
-                <p className="text-[11px] uppercase tracking-[0.2em] text-background mb-4 md:mb-6">
-                  {t.home.aboutTitle}
-                </p>
-                <p className="font-display leading-snug text-background whitespace-pre-line text-base md:text-lg">
-                  {t.home.aboutText}
-                </p>
-              </div>
-              <div className="md:col-span-5 md:col-start-8 max-w-[220px] md:max-w-md mx-auto md:mx-0 w-full order-1 md:order-2">
-                <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted shadow-2xl">
-                  <img
-                    src={maker}
-                    alt="Michael Dittmann in seiner Werkstatt"
-                    className="w-full h-full object-cover"
-                    width={1280}
-                    height={1600}
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CONTACT INVITATION */}
       <section className="py-16 md:py-24">
         <div className="container max-w-3xl text-center">
@@ -268,52 +314,6 @@ const Home = () => {
             </div>
           </div>
           <div className="border-b border-border/70" />
-        </div>
-      </section>
-
-      {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
-      <section className="container pb-16 md:pb-24">
-        <div className="mx-auto w-full max-w-3xl aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
-          <ExternalEmbed provider="YouTube" poster={soundThumb} className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0?autoplay=1"
-            title="Klangbeispiel — Gitarre von Michael Dittmann"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-            className="h-full w-full"
-          />
-          </ExternalEmbed>
-        </div>
-      </section>
-
-      {/* PROCESS ENTRY */}
-      <section className="py-12 md:py-20">
-        <div className="relative w-full overflow-hidden">
-          <div className="aspect-[16/9] md:aspect-[21/9] w-full">
-            <img
-              src={process}
-              alt="Werkstatt mit Tonhölzern und Gitarrenkörpern"
-              className="w-full h-full object-cover"
-              width={1920}
-              height={1080}
-              loading="lazy"
-            />
-          </div>
-          <div className="absolute inset-x-0 bottom-0 pointer-events-none">
-            <div className="h-32 bg-gradient-to-t from-foreground/60 to-transparent" />
-          </div>
-          <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
-            <a
-              href="https://www.instagram.com/dittmann.guitars/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
-            >
-              {t.home.processLink}
-              <ArrowRight className="size-4" />
-            </a>
-          </div>
         </div>
       </section>
 
