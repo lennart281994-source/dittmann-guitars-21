@@ -43,6 +43,12 @@ export const dict = {
       contactInvite:
         "Meine Instrumente können nach Absprache in Michael Wichmanns Laden in Hamburg oder in Malliß in Ruhe angespielt werden.",
       contactLink: "Kontakt aufnehmen",
+      twoPathsTitle: "Zwei Wege zu Ihrem Instrument",
+      pathAvailableText: "Fertige Instrumente aus der Werkstatt – bereit zum Anspielen.",
+      pathCommissionText: "Gemeinsam geplant, abgestimmt auf Ihre Hände und Ihren Klang.",
+      soundKicker: "Klang",
+      soundTitle: "Den Ton erleben",
+      contactKicker: "Anspielen & Kontakt",
     },
     instruments: {
       title: "Verfügbare Gitarren",
@@ -185,6 +191,12 @@ export const dict = {
       contactInvite:
         "My instruments can be played by appointment, at Michael Wichmann's shop in Hamburg or in Malliß.",
       contactLink: "Get in touch",
+      twoPathsTitle: "Two paths to your instrument",
+      pathAvailableText: "Finished instruments from the workshop – ready to be played.",
+      pathCommissionText: "Planned together, tuned to your hands and your sound.",
+      soundKicker: "Sound",
+      soundTitle: "Hear the tone",
+      contactKicker: "Play & Contact",
     },
     instruments: {
       title: "Available Guitars",

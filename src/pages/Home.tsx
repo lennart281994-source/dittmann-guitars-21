@@ -102,8 +102,12 @@ const Home = () => {
       </section>
 
       {/* TWO PATHS */}
-      <section className="container py-28 md:py-40">
-
+      <section className="container py-24 md:py-32">
+        <div className="mb-14 md:mb-20 text-center">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.twoPathsKicker}</p>
+          <h2 className="mt-4 font-display font-light text-3xl md:text-5xl text-foreground">{t.home.twoPathsTitle}</h2>
+          <div className="mx-auto mt-6 h-px w-12 bg-accent" aria-hidden="true" />
+        </div>
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image with soft crossfade */}
           <div className="relative aspect-[4/5] w-full max-w-sm md:max-w-md mx-auto max-h-[70vh] overflow-hidden rounded-2xl bg-muted">
@@ -132,7 +136,7 @@ const Home = () => {
           </div>
 
           {/* Options */}
-          <div className="flex flex-col gap-10 md:gap-14">
+          <div className="flex flex-col gap-10 md:gap-12 md:border-l md:border-border md:pl-12">
             <Link
               to={pathFor("instruments", locale)}
               onMouseEnter={() => setActivePath("available")}
@@ -146,6 +150,9 @@ const Home = () => {
                 <span className="link-underline" data-active={activePath === "available" ? "true" : "false"}>
                   {t.home.pathAvailable}
                 </span>
+              </span>
+              <span className="mt-3 block max-w-sm text-sm md:text-base leading-relaxed text-muted-foreground">
+                {t.home.pathAvailableText}
               </span>
               <span className="mt-3 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 <ArrowRight className="size-3.5" />
@@ -166,6 +173,9 @@ const Home = () => {
                   {t.home.pathCommission}
                 </span>
               </span>
+              <span className="mt-3 block max-w-sm text-sm md:text-base leading-relaxed text-muted-foreground">
+                {t.home.pathCommissionText}
+              </span>
               <span className="mt-3 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 <ArrowRight className="size-3.5" />
               </span>
@@ -175,7 +185,13 @@ const Home = () => {
       </section>
 
       {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
-      <section className="container pb-16 md:pb-24">
+      <section className="bg-secondary/60 py-20 md:py-28">
+        <div className="container">
+        <div className="mb-10 md:mb-14 text-center">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.soundKicker}</p>
+          <h2 className="mt-4 font-display font-light text-3xl md:text-5xl text-foreground">{t.home.soundTitle}</h2>
+          <div className="mx-auto mt-6 h-px w-12 bg-accent" aria-hidden="true" />
+        </div>
         <div className="mx-auto w-full max-w-3xl aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
           <ExternalEmbed provider="YouTube" poster={soundThumb} className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
           <iframe
@@ -187,6 +203,7 @@ const Home = () => {
             className="h-full w-full"
           />
           </ExternalEmbed>
+        </div>
         </div>
       </section>
 
@@ -224,38 +241,41 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PROCESS ENTRY */}
-      <section className="py-12 md:py-20">
-        <div className="relative w-full overflow-hidden">
-          <div className="aspect-[16/9] md:aspect-[21/9] w-full">
-            <img
-              src={process}
-              alt="Werkstatt mit Tonhölzern und Gitarrenkörpern"
-              className="w-full h-full object-cover"
-              width={1920}
-              height={1080}
-              loading="lazy"
-            />
-          </div>
-          <div className="absolute inset-x-0 bottom-0 pointer-events-none">
-            <div className="h-32 bg-gradient-to-t from-foreground/60 to-transparent" />
-          </div>
-          <div className="absolute inset-x-0 bottom-6 md:bottom-10 flex justify-center">
+      {/* PROCESS ENTRY — heller Ruhepol */}
+      <section className="container py-24 md:py-32">
+        <div className="grid md:grid-cols-12 gap-12 md:gap-16 items-center">
+          <div className="md:col-span-5">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.processKicker}</p>
+            <h2 className="mt-4 font-display font-light text-3xl md:text-4xl leading-tight text-foreground">{t.home.philosophy}</h2>
+            <div className="mt-6 h-px w-12 bg-accent" aria-hidden="true" />
+            <p className="mt-6 whitespace-pre-line text-sm md:text-base leading-relaxed text-muted-foreground">{t.home.philosophyBody}</p>
             <a
               href="https://www.instagram.com/dittmann.guitars/"
               target="_blank"
               rel="noopener noreferrer"
-              className="link-underline font-display text-lg md:text-xl text-background inline-flex items-center gap-3"
+              className="mt-8 link-underline font-display text-lg text-foreground inline-flex items-center gap-3"
             >
               {t.home.processLink}
               <ArrowRight className="size-4" />
             </a>
           </div>
+          <div className="md:col-span-7">
+            <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-muted shadow-sm">
+              <img
+                src={process}
+                alt="Werkstatt mit Tonhölzern und Gitarrenkörpern"
+                className="w-full h-full object-cover"
+                width={1920}
+                height={1080}
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ATELIERKONZERTE */}
-      <section className="pb-20 md:pb-32">
+      <section>
         <Link
           to="/concerts"
           className="panel-gradient group relative block w-full overflow-hidden text-panel-foreground"
@@ -297,23 +317,19 @@ const Home = () => {
       </section>
 
       {/* CONTACT INVITATION */}
-      <section className="py-16 md:py-24">
-        <div className="container max-w-3xl text-center">
-          <div className="border-t border-border/70" />
-          <div className="py-12 md:py-16 space-y-8 md:space-y-10">
-            <p className="font-display italic text-2xl md:text-3xl leading-relaxed text-foreground">
-              {t.home.contactInvite}
-            </p>
-            <div>
-              <Link
-                to={pathFor("contact", locale)}
-                className="link-underline font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft"
-              >
-                {t.home.contactLink}
-              </Link>
-            </div>
-          </div>
-          <div className="border-b border-border/70" />
+      <section className="bg-secondary/60 py-24 md:py-32">
+        <div className="container max-w-2xl text-center">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.contactKicker}</p>
+          <div className="mx-auto mt-6 h-px w-12 bg-accent" aria-hidden="true" />
+          <p className="mt-8 font-display italic text-2xl md:text-3xl leading-relaxed text-foreground">
+            {t.home.contactInvite}
+          </p>
+          <Link
+            to={pathFor("contact", locale)}
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3 text-xs uppercase tracking-[0.2em] hover:bg-primary/90 transition-soft"
+          >
+            {t.home.contactLink} <ArrowRight className="size-3.5" />
+          </Link>
         </div>
       </section>
 
