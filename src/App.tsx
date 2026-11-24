@@ -11,6 +11,7 @@ import Construction from "./pages/Construction";
 import Sound from "./pages/Sound";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
+import Concerts from "./pages/Concerts";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/de" replace />} />
+
+          <Route path="/concerts" element={<Layout />}>
+            <Route index element={<Concerts />} />
+          </Route>
 
           {/* German */}
           <Route path="/de" element={<Layout />}>

@@ -1,4 +1,5 @@
 import { useT } from "@/i18n/useT";
+import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import img1 from "@/assets/instrument-1.png";
 import img2 from "@/assets/instrument-2.jpg";
@@ -11,7 +12,28 @@ const Instruments = () => {
 
   return (
     <div className="pt-32 md:pt-40">
-      <div className="container mt-8 md:mt-12 space-y-32 md:space-y-44">
+      <div className="container">
+        <aside className="mx-auto max-w-3xl rounded-2xl border border-accent/40 bg-muted/50 px-6 py-8 md:px-10 md:py-10 text-center">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-accent">
+            {locale === "de" ? "Verfügbare Modelle" : "Available models"}
+          </p>
+          <h1 className="mt-3 font-display text-2xl md:text-3xl text-foreground tracking-tight">
+            {locale === "de" ? "Es gibt aktuell verfügbare Gitarren." : "Guitars are currently available."}
+          </h1>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            {locale === "de"
+              ? "Fotos und Beschreibungen folgen in Kürze. Bei Interesse melden Sie sich gern schon jetzt."
+              : "Photos and descriptions are coming soon. If you are interested, please get in touch now."}
+          </p>
+          <Link
+            to={`/${locale}/${locale === "de" ? "kontakt" : "contact"}`}
+            className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-[12px] uppercase tracking-[0.2em] text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            {locale === "de" ? "Kontakt aufnehmen" : "Get in touch"}
+          </Link>
+        </aside>
+      </div>
+      <div className="container mt-20 md:mt-28 space-y-32 md:space-y-44">
         {t.instruments.items.map((item, idx) => {
           const reverse = idx % 2 === 1;
           return (
@@ -20,7 +42,7 @@ const Instruments = () => {
               className="grid md:grid-cols-12 gap-10 md:gap-16 items-center"
             >
               <div className={cn("md:col-span-7", reverse && "md:order-2 md:col-start-6")}>
-                <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-background max-h-[80vh] mx-auto">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-background max-h-[80vh] mx-auto">
                   <img
                     src={images[idx % images.length]}
                     alt={item.name}
@@ -29,6 +51,11 @@ const Instruments = () => {
                     height={1700}
                     loading="lazy"
                   />
+                  {item.sold && (
+                    <span className="absolute left-4 top-4 rounded-full border border-border/70 bg-background/85 px-4 py-1.5 text-[11px] uppercase tracking-[0.2em] text-foreground backdrop-blur-sm">
+                      {t.instruments.soldLabel}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className={cn("md:col-span-5", reverse && "md:order-1 md:col-start-1 md:row-start-1")}>
@@ -46,12 +73,14 @@ const Instruments = () => {
                     </div>
                   ))}
                 </dl>
-                <a
-                  href={`/${locale}/${locale === "de" ? "kontakt" : "contact"}`}
-                  className="mt-10 inline-block text-[11px] uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 hover:border-accent transition-colors"
-                >
-                  {t.instruments.inquireCta}
-                </a>
+                {!item.sold && (
+                  <a
+                    href={`/${locale}/${locale === "de" ? "kontakt" : "contact"}`}
+                    className="mt-10 inline-block text-[11px] uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 hover:border-accent transition-colors"
+                  >
+                    {t.instruments.inquireCta}
+                  </a>
+                )}
               </div>
             </article>
           );

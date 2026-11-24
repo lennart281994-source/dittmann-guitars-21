@@ -36,6 +36,14 @@
     --input: 33 27% 88%;
     --ring: 22 49% 47%;
 
+    /* Atelierkonzerte panel — deep midnight slate surface */
+    --panel: 217 32% 17%;
+    --panel-foreground: 210 30% 97%;
+    --panel-muted: 214 18% 72%;
+    --panel-border: 215 22% 34%;
+    --panel-glow: 213 45% 45%;
+    --gradient-panel: linear-gradient(165deg, hsl(216 28% 24%) 0%, hsl(218 32% 15%) 55%, hsl(221 36% 11%) 100%);
+
     --radius: 0.875rem;
 
     /* Sidebar (unused but kept for shadcn compatibility) */
@@ -69,6 +77,13 @@
     --border: 30 10% 22%;
     --input: 30 10% 22%;
     --ring: 22 49% 55%;
+
+    --panel: 216 26% 13%;
+    --panel-foreground: 210 30% 97%;
+    --panel-muted: 214 16% 68%;
+    --panel-border: 215 20% 28%;
+    --panel-glow: 213 40% 42%;
+    --gradient-panel: linear-gradient(165deg, hsl(216 26% 19%) 0%, hsl(218 30% 12%) 60%, hsl(221 34% 9%) 100%);
   }
 }
 
@@ -149,5 +164,13 @@
   }
   .animate-image-fade-in {
     animation: image-fade-in 1000ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* Atelierkonzerte panel surfaces — colour instead of photography */
+  .panel-gradient {
+    background-image: var(--gradient-panel);
+  }
+  .panel-glow {
+    background-image: radial-gradient(58% 58% at 50% 42%, hsl(var(--panel-glow) / 0.3), transparent 72%);
   }
 }

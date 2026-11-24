@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { ConsentBanner } from "./ConsentBanner";
 
 export const Layout = () => {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ export const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <ConsentBanner />
     </div>
   );
 };

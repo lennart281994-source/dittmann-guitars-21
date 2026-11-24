@@ -35,6 +35,7 @@ export const Header = () => {
     { to: `/${locale}`, label: t.nav.home, end: true },
     { to: pathFor("construction", locale), label: t.nav.construction },
     { to: pathFor("sound", locale), label: t.nav.sound },
+    { to: "/concerts", label: "Atelierkonzerte" },
     { to: pathFor("contact", locale), label: t.nav.contact },
   ];
 

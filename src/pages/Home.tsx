@@ -1,14 +1,18 @@
+import { ExternalEmbed } from "@/components/ExternalEmbed";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { pathFor, useT } from "@/i18n/useT";
 import { cn } from "@/lib/utils";
 import hero from "@/assets/hero.jpg";
-import pathAvailable from "@/assets/path-available.jpg";
+import pathAvailableAsset from "@/assets/guitar-rosette.webp.asset.json";
+const pathAvailable = pathAvailableAsset.url;
 import pathCommission from "@/assets/path-commission.jpg";
 import maker from "@/assets/maker.jpg";
 import process from "@/assets/process.jpg";
 import aboutBg from "@/assets/about-bg.jpg";
+import { concertsConfig as concerts } from "@/config/concerts";
+import { AtelierRule } from "@/components/AtelierBackdrop";
 
 const Home = () => {
   const { t, locale } = useT();
@@ -170,6 +174,48 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ATELIERKONZERTE */}
+      <section className="pb-20 md:pb-32">
+        <Link
+          to="/concerts"
+          className="panel-gradient group relative block w-full overflow-hidden text-panel-foreground"
+        >
+          <div className="relative">
+            <img
+              src={concerts.images.hero}
+              alt="Gitarren, Werkbank und Lampe im Gitarrenatelier Michael Wichmann"
+              className="w-full aspect-[7/2] object-cover object-[center_40%]"
+              width={1279}
+              height={851}
+              loading="lazy"
+            />
+            <div
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-panel md:h-16"
+              aria-hidden="true"
+            />
+          </div>
+          <div className="relative container py-12 md:py-16 text-center max-w-2xl">
+            <p className="flex items-center justify-center gap-3 text-[11px] uppercase tracking-[0.22em] text-panel-muted">
+              <span className="h-px w-8 bg-panel-border" aria-hidden="true" />
+              {concerts.text.kicker}
+              <span className="h-px w-8 bg-panel-border" aria-hidden="true" />
+            </p>
+            <h2 className="mt-6 font-display font-light uppercase text-panel-foreground text-[2rem] sm:text-5xl md:text-6xl tracking-[0.04em] sm:tracking-[0.08em]">
+              {concerts.text.title}
+            </h2>
+            <AtelierRule className="mt-7" />
+            <p className="mt-7 font-display italic text-panel-muted text-xl md:text-2xl">{concerts.text.subtitle}</p>
+            <p className="mx-auto mt-6 max-w-md text-sm md:text-base leading-relaxed text-panel-muted">
+              {concerts.text.intro1} {concerts.text.intro2}
+            </p>
+            <p className="mt-8 text-panel-foreground text-xs md:text-sm uppercase tracking-[0.18em] font-medium">{concerts.text.facts}</p>
+            <span className="mt-9 inline-flex items-center gap-2 rounded-full bg-panel-foreground text-panel px-7 py-3 text-xs uppercase tracking-[0.2em] group-hover:bg-panel-foreground/90 transition-soft">
+              {concerts.text.homeButton} <ArrowRight className="size-3.5" />
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* ABOUT */}
       <section
         className="relative w-full overflow-hidden md:aspect-[21/9] bg-cover bg-center"
@@ -222,6 +268,22 @@ const Home = () => {
             </div>
           </div>
           <div className="border-b border-border/70" />
+        </div>
+      </section>
+
+      {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
+      <section className="container pb-16 md:pb-24">
+        <div className="mx-auto w-full max-w-3xl aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
+          <ExternalEmbed provider="YouTube" className="h-full w-full rounded-none border-0" buttonLabel="Video laden" note="Hier ist ein Video von YouTube eingebunden. Erst wenn Sie auf „Video laden“ klicken, wird eine Verbindung zu YouTube (Google) hergestellt und Ihre IP-Adresse übertragen.">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/JauK_--NGe0"
+            title="Klangbeispiel — Gitarre von Michael Dittmann"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+            className="h-full w-full"
+          />
+          </ExternalEmbed>
         </div>
       </section>
 

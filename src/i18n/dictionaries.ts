@@ -49,9 +49,11 @@ export const dict = {
       intro:
         "Eine kleine Auswahl gerade fertiggestellter Gitarren. Jedes Instrument ist einzigartig — in Holzwahl, Klang und Charakter.",
       inquireCta: "Anfrage zu diesem Instrument",
+      soldLabel: "Verkauft",
       items: [
         {
           name: "Konzertgitarre",
+          sold: true,
           character:
             "Ein heller, klarer Klang mit feiner Ansprache. Leicht gebaut, reagiert sie unmittelbar und macht jede Nuance hörbar.",
           specs: [
@@ -118,11 +120,11 @@ export const dict = {
       ],
     },
     sound: {
-      kicker: "Demnächst",
+      kicker: "Zum Anhören",
       title: "Klang",
       teaser:
-        "Hier sind bald \nVideos meiner Gitarren zu finden.",
-      note: "Demnächst zu sehen und zu hören.",
+        "So klingen meine Gitarren –\naufgenommen im Atelier.",
+      note: "Weitere Aufnahmen folgen.",
     },
     contact: {
       title: "Kontakt",
@@ -189,9 +191,11 @@ export const dict = {
       intro:
         "A small selection of recently completed guitars. Each instrument is unique — in wood, in voice, in character.",
       inquireCta: "Inquire about this instrument",
+      soldLabel: "Sold",
       items: [
         {
           name: "Concert Guitar",
+          sold: true,
           character:
             "A bright, clear sound with fine response. Lightly built, it reacts immediately and makes every nuance audible.",
           specs: [
@@ -258,11 +262,11 @@ export const dict = {
       ],
     },
     sound: {
-      kicker: "Coming soon",
+      kicker: "Listen",
       title: "Sound",
       teaser:
-        "Video recordings of my guitars\nwill soon be shared here.",
-      note: "Coming soon — to see and to hear.",
+        "This is how my guitars sound –\nrecorded in the workshop.",
+      note: "More recordings to follow.",
     },
     contact: {
       title: "Contact",

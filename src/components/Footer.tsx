@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { LegalDialogs } from "./LegalDialogs";
 import { useT } from "@/i18n/useT";
+import { openConsentSettings } from "@/lib/consent";
 
 export const Footer = () => {
   const { t, locale } = useT();
@@ -37,6 +38,9 @@ export const Footer = () => {
           {/* Right: legal + language */}
           <div className="space-y-3 md:flex md:flex-col md:items-end">
             <LegalDialogs />
+            <button type="button" onClick={openConsentSettings} className="block text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft">
+              Cookie-Einstellungen
+            </button>
             <LanguageSwitch />
           </div>
         </div>

@@ -14,7 +14,7 @@ export const ImpressumContent = () => (
 
     <section>
       <p className="font-medium text-foreground">Kontakt:</p>
-      <p>Telefon: +49 1784159440</p>
+      <p>Telefon: +49 178 4159440</p>
       <p>
         E-Mail:{" "}
         <a
