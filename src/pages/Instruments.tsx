@@ -13,7 +13,7 @@ const Instruments = () => {
   return (
     <div className="pt-32 md:pt-40">
       <div className="container">
-        <aside className="mx-auto max-w-3xl rounded-2xl border border-accent/40 bg-muted/50 px-6 py-8 md:px-10 md:py-10 text-center">
+        <aside className="mx-auto max-w-3xl rounded-2xl border border-accent/40 bg-background px-6 py-8 md:px-10 md:py-10 text-center">
           <p className="text-[11px] uppercase tracking-[0.25em] text-accent">
             {locale === "de" ? "Verfügbare Modelle" : "Available models"}
           </p>

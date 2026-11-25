@@ -117,7 +117,7 @@ const Concerts = () => {
       </section>
 
       {/* 2 — Nächstes Konzert + Reservierung */}
-      <section id="reservierung" className="bg-muted/50 border-y border-border scroll-mt-20">
+      <section id="reservierung" className="bg-background border-y border-border scroll-mt-20">
         <div className="container py-12 md:py-16 max-w-6xl">
           <div className="flex items-center gap-3 mb-8">
             <span className="rounded-full bg-accent text-accent-foreground px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
@@ -210,7 +210,7 @@ const Concerts = () => {
 
       {/* 4 — Newsletter */}
       <section id="newsletter" className="scroll-mt-20 container max-w-6xl pb-14 md:pb-20">
-        <div className="rounded-2xl border border-border bg-muted/50 px-4 py-8 md:px-10 md:py-10 text-center">
+        <div className="rounded-2xl border border-border bg-background px-4 py-8 md:px-10 md:py-10 text-center">
           <div>
             <Kicker>Newsletter</Kicker>
             <h2 className="mt-3 font-display text-2xl md:text-3xl mb-4">{t.newsletterTitle}</h2>

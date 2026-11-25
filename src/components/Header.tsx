@@ -53,10 +53,10 @@ export const Header = () => {
         "fixed top-0 left-0 right-0 z-50 transition-soft",
         transparent
           ? "bg-transparent"
-          : "bg-background/85 backdrop-blur-md border-b border-border/60",
+          : "bg-background border-b border-border/60",
       )}
     >
-      <div className="container flex items-center justify-between py-5 md:py-6 gap-6">
+      <div className="container flex items-center justify-between py-[14px] md:py-[18px] gap-6">
         <NavLink
           to={`/${locale}`}
           aria-label={locale === "de" ? "Zur Startseite" : "Go to homepage"}
@@ -67,7 +67,7 @@ export const Header = () => {
             transparent ? "opacity-0 -translate-x-2 pointer-events-none" : "opacity-100 translate-x-0",
           )}
         >
-          <img src="/favicon.png" alt="" className="size-8 md:size-9 rounded-sm object-contain" />
+          <img src="/favicon.png" alt="" className="size-11 md:size-12 rounded-sm object-contain" />
         </NavLink>
 
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">

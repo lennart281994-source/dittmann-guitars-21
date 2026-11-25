@@ -185,7 +185,7 @@ const Home = () => {
       </section>
 
       {/* SOUND VIDEO — YouTube im erweiterten Datenschutzmodus */}
-      <section className="bg-secondary/60 py-20 md:py-28">
+      <section className="bg-background border-y border-border/60 py-20 md:py-28">
         <div className="container">
         <div className="mb-10 md:mb-14 text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.soundKicker}</p>
@@ -317,7 +317,7 @@ const Home = () => {
       </section>
 
       {/* CONTACT INVITATION */}
-      <section className="bg-secondary/60 py-24 md:py-32">
+      <section className="bg-background border-y border-border/60 py-24 md:py-32">
         <div className="container max-w-2xl text-center">
           <p className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">{t.home.contactKicker}</p>
           <div className="mx-auto mt-6 h-px w-12 bg-accent" aria-hidden="true" />
