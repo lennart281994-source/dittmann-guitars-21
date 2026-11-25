@@ -106,6 +106,67 @@ const Concerts = () => {
         </div>
       </section>
 
+      {/* 2 — Nächstes Konzert + Reservierung */}
+      <section id="reservierung" className="bg-muted/50 border-y border-border scroll-mt-20">
+        <div className="container py-12 md:py-16 max-w-6xl">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="rounded-full bg-accent text-accent-foreground px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
+              Nächster Termin
+            </span>
+            <h2 className="font-display text-2xl md:text-3xl">{t.nextTitle}</h2>
+          </div>
+          {c.pretixEventUrl ? (
+            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-6 md:gap-8 items-stretch">
+              <article className="flex flex-col rounded-2xl border border-border bg-background overflow-hidden">
+                <div className="grid sm:grid-cols-[180px_1fr]">
+                  <div className="aspect-[4/5] sm:aspect-auto bg-muted">
+                    <img src={n.image} alt={`Gitarrist ${n.artist}`} className="w-full h-full object-cover object-[center_45%]" loading="lazy" />
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <h3 className="font-display text-3xl">{n.artist}</h3>
+                    <div>
+                      <p className="font-display text-lg md:text-xl text-foreground">{n.date}</p>
+                      <p className="text-sm uppercase tracking-[0.18em] text-accent font-medium">{n.time}</p>
+                    </div>
+                    <address className="not-italic text-sm text-foreground/75 leading-relaxed">
+                      {n.venue}<br />{n.address}
+                      <br />
+                      <a href={n.mapsUrl} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block underline underline-offset-4 text-foreground hover:text-accent">
+                        Route planen
+                      </a>
+                    </address>
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col px-6 pb-6 pt-2 border-t border-border">
+                  <p className="pt-4 text-sm text-foreground/80 leading-relaxed">{n.description}</p>
+                  <p className="mt-auto pt-4 text-[11px] uppercase tracking-[0.18em] text-foreground/80">{t.infoLine}</p>
+                </div>
+              </article>
+
+              <div className="rounded-2xl panel-gradient text-panel-foreground p-5 sm:p-7">
+                <h3 className="font-display text-2xl md:text-3xl">{t.reserveTitle}</h3>
+                <p className="mt-3 text-sm text-panel-muted leading-relaxed">{t.reservationInfo}</p>
+                <p className="mt-4 border-l-2 border-accent pl-4 text-sm font-semibold text-panel-foreground leading-relaxed">
+                  {t.reservationGuestlist}
+                </p>
+                <p className="mt-3 text-sm text-panel-muted leading-relaxed">{t.reservationFree}</p>
+                <div className="pretix-host mt-6 rounded-xl bg-background text-foreground p-4">
+                  <PretixWidget url={c.pretixEventUrl} />
+                </div>
+                <p className="mt-4 text-sm text-panel-muted italic font-display">{t.waitlist}</p>
+              </div>
+            </div>
+          ) : (
+            <div className="max-w-xl space-y-4">
+              <p className="font-display italic text-2xl">{t.noConcert}</p>
+              <a href="#newsletter" className="link-underline text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft">
+                {t.noConcertLink}
+              </a>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* 3 — Idee + Online */}
       <section className="container py-14 md:py-20 max-w-6xl grid md:grid-cols-2 gap-12 md:gap-16">
         <div>
@@ -140,61 +201,6 @@ const Concerts = () => {
               <p className="text-sm italic font-display text-muted-foreground">{t.youtubeSoon}</p>
             ) : null}
           </div>
-        </div>
-      </section>
-
-      {/* 2 — Nächstes Konzert + Reservierung */}
-      <section id="reservierung" className="bg-muted/50 border-b border-border scroll-mt-20">
-        <div className="container py-12 md:py-16 max-w-6xl">
-          <div className="flex items-center gap-3 mb-8">
-            <span className="rounded-full bg-accent text-accent-foreground px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
-              Nächster Termin
-            </span>
-            <h2 className="font-display text-2xl md:text-3xl">{t.nextTitle}</h2>
-          </div>
-          {c.pretixEventUrl ? (
-            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-6 md:gap-8 items-start">
-              <article className="rounded-2xl border border-border bg-background overflow-hidden">
-                <div className="grid sm:grid-cols-[180px_1fr]">
-                  <div className="aspect-[4/5] sm:aspect-auto bg-muted">
-                    <img src={n.image} alt={`Gitarrist ${n.artist}`} className="w-full h-full object-cover object-[center_45%]" loading="lazy" />
-                  </div>
-                  <div className="p-6 space-y-3">
-                    <h3 className="font-display text-3xl">{n.artist}</h3>
-                    <div>
-                      <p className="font-display text-lg md:text-xl text-foreground">{n.date}</p>
-                      <p className="text-sm uppercase tracking-[0.18em] text-accent font-medium">{n.time}</p>
-                    </div>
-                    <p className="text-sm text-foreground/75">{n.venue}</p>
-                  </div>
-                </div>
-                <div className="px-6 pb-6 pt-2 border-t border-border">
-                  <p className="pt-4 text-sm text-foreground/80 leading-relaxed">{n.description}</p>
-                  <p className="mt-4 text-[11px] uppercase tracking-[0.18em] text-foreground/80">{t.infoLine}</p>
-                </div>
-              </article>
-
-              <div className="rounded-2xl panel-gradient text-panel-foreground p-5 sm:p-7">
-                <h3 className="font-display text-2xl md:text-3xl">{t.reserveTitle}</h3>
-                <p className="mt-3 text-sm text-panel-muted leading-relaxed">{t.reservationInfo}</p>
-                <p className="mt-4 border-l-2 border-accent pl-4 text-sm font-semibold text-panel-foreground leading-relaxed">
-                  {t.reservationGuestlist}
-                </p>
-                <p className="mt-3 text-sm text-panel-muted leading-relaxed">{t.reservationFree}</p>
-                <div className="pretix-host mt-6 rounded-xl bg-background text-foreground p-4">
-                  <PretixWidget url={c.pretixEventUrl} />
-                </div>
-                <p className="mt-4 text-sm text-panel-muted italic font-display">{t.waitlist}</p>
-              </div>
-            </div>
-          ) : (
-            <div className="max-w-xl space-y-4">
-              <p className="font-display italic text-2xl">{t.noConcert}</p>
-              <a href="#newsletter" className="link-underline text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-soft">
-                {t.noConcertLink}
-              </a>
-            </div>
-          )}
         </div>
       </section>
 

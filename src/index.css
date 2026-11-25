@@ -174,3 +174,7 @@
     background-image: radial-gradient(58% 58% at 50% 42%, hsl(var(--panel-glow) / 0.3), transparent 72%);
   }
 }
+
+/* pretix: Button-Text "Anmelden" durch "Platz reservieren" ersetzen */
+.pretix-host .pretix-widget-action button { font-size: 0 !important; }
+.pretix-host .pretix-widget-action button::after { content: "Platz reservieren"; font-size: 0.875rem; }

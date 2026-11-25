@@ -35,7 +35,9 @@ export const concertsConfig = {
     image: nextArtistImage,
     date: "Sonntag, 13. Dezember 2026",
     time: "17:00 Uhr",
-    venue: "Gitarrenatelier Michael Wichmann, Hamburg",
+    venue: "Gitarrenatelier Michael Wichmann",
+    address: "Bundesstraße 21, 20146 Hamburg",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Michael+Wichmann+Gitarrenbau+Bundesstra%C3%9Fe+21+20146+Hamburg",
     description: "Daniel Molina verbindet klassische Gitarrenmusik mit Werken aus Lateinamerika und Spanien. Zum Auftakt unserer Konzertreihe nimmt er dich mit auf eine musikalische Entdeckungsreise.",
   },
 
