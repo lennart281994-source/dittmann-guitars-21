@@ -106,6 +106,16 @@ const Concerts = () => {
         </div>
       </section>
 
+      {/* 2 — Idee */}
+      <section className="container py-14 md:py-20 max-w-3xl">
+        <div>
+          <Kicker>Die Idee</Kicker>
+          <h2 className="mt-3 font-display text-2xl md:text-3xl mb-5">{t.ideaTitle}</h2>
+          <p className="text-[15px] text-foreground/80 leading-[1.75] whitespace-pre-line">{t.ideaText}</p>
+          <p className="mt-6 border-l-2 border-accent pl-4 font-display italic text-foreground/85 leading-relaxed">{t.ideaCredit}</p>
+        </div>
+      </section>
+
       {/* 2 — Nächstes Konzert + Reservierung */}
       <section id="reservierung" className="bg-muted/50 border-y border-border scroll-mt-20">
         <div className="container py-12 md:py-16 max-w-6xl">
@@ -167,14 +177,8 @@ const Concerts = () => {
         </div>
       </section>
 
-      {/* 3 — Idee + Online */}
-      <section className="container py-14 md:py-20 max-w-6xl grid md:grid-cols-2 gap-12 md:gap-16">
-        <div>
-          <Kicker>Die Idee</Kicker>
-          <h2 className="mt-3 font-display text-2xl md:text-3xl mb-5">{t.ideaTitle}</h2>
-          <p className="text-[15px] text-foreground/80 leading-[1.75] whitespace-pre-line">{t.ideaText}</p>
-          <p className="mt-6 border-l-2 border-accent pl-4 font-display italic text-foreground/85 leading-relaxed">{t.ideaCredit}</p>
-        </div>
+      {/* 4 — Online */}
+      <section className="container py-14 md:py-20 max-w-3xl">
         <div>
           <Kicker>Online</Kicker>
           <h2 className="mt-3 font-display text-2xl md:text-3xl mb-5">{t.onlineTitle}</h2>
