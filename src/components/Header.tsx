@@ -57,6 +57,19 @@ export const Header = () => {
       )}
     >
       <div className="container flex items-center justify-between py-5 md:py-6 gap-6">
+        <NavLink
+          to={`/${locale}`}
+          aria-label={locale === "de" ? "Zur Startseite" : "Go to homepage"}
+          aria-hidden={transparent}
+          tabIndex={transparent ? -1 : 0}
+          className={cn(
+            "shrink-0 transition-all duration-500 ease-out",
+            transparent ? "opacity-0 -translate-x-2 pointer-events-none" : "opacity-100 translate-x-0",
+          )}
+        >
+          <img src="/favicon.png" alt="" className="size-8 md:size-9 rounded-sm object-contain" />
+        </NavLink>
+
         <nav className="hidden md:flex items-center gap-8 lg:gap-10">
           {/* Home */}
           <NavLink
