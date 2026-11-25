@@ -208,27 +208,8 @@ const Concerts = () => {
         </div>
       </section>
 
-      {/* 3b — Musiker-Kontakt */}
-      <section className="container max-w-6xl pb-14 md:pb-20">
-        <div className="rounded-2xl panel-gradient text-panel-foreground px-6 py-10 md:px-12 md:py-12 text-center">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-panel-muted">Für Musiker</p>
-          <h2 className="mt-3 font-display text-2xl md:text-3xl">{t.playTitle}</h2>
-          <p className="mt-4 mx-auto max-w-2xl text-sm md:text-base text-panel-muted leading-relaxed">{t.playText}</p>
-          <a
-            href={`mailto:${c.musicianEmail}?subject=${encodeURIComponent(c.musicianSubject)}`}
-            className="mt-7 inline-flex items-center gap-2 rounded-full bg-panel-foreground text-panel px-7 py-3 text-xs uppercase tracking-[0.2em] hover:bg-panel-foreground/90 transition-soft"
-          >
-            {t.playButton} <ArrowRight className="size-3.5" />
-          </a>
-          <p className="mt-5 text-sm text-panel-muted">
-            {t.playQuestions}{" "}
-            <a href={`mailto:${c.musicianEmail}`} className="underline underline-offset-4 text-panel-foreground inline-block">{c.musicianEmail}</a>
-          </p>
-        </div>
-      </section>
-
       {/* 4 — Newsletter */}
-      <section id="newsletter" className="scroll-mt-20 container max-w-6xl pb-16 md:pb-24">
+      <section id="newsletter" className="scroll-mt-20 container max-w-6xl pb-14 md:pb-20">
         <div className="rounded-2xl border border-border bg-muted/50 px-4 py-8 md:px-10 md:py-10 text-center">
           <div>
             <Kicker>Newsletter</Kicker>
@@ -266,6 +247,25 @@ const Concerts = () => {
           </div>
         </div>
       </section>
+      {/* 3b — Musiker-Kontakt */}
+      <section className="container max-w-6xl pb-16 md:pb-24">
+        <div className="rounded-2xl panel-gradient text-panel-foreground px-6 py-10 md:px-12 md:py-12 text-center">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-panel-muted">Für Musiker</p>
+          <h2 className="mt-3 font-display text-2xl md:text-3xl">{t.playTitle}</h2>
+          <p className="mt-4 mx-auto max-w-2xl text-sm md:text-base text-panel-muted leading-relaxed">{t.playText}</p>
+          <a
+            href={`mailto:${c.musicianEmail}?subject=${encodeURIComponent(c.musicianSubject)}`}
+            className="mt-7 inline-flex items-center gap-2 rounded-full bg-panel-foreground text-panel px-7 py-3 text-xs uppercase tracking-[0.2em] hover:bg-panel-foreground/90 transition-soft"
+          >
+            {t.playButton} <ArrowRight className="size-3.5" />
+          </a>
+          <p className="mt-5 text-sm text-panel-muted">
+            {t.playQuestions}{" "}
+            <a href={`mailto:${c.musicianEmail}`} className="underline underline-offset-4 text-panel-foreground inline-block">{c.musicianEmail}</a>
+          </p>
+        </div>
+      </section>
+
     </>
   );
 };
